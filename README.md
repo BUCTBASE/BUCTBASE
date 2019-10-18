@@ -30,7 +30,7 @@
 - 平时作业及网络课程答案
 - 历年试卷
 - 复习资料
-- 开卷考试 A4 纸
+- 开卷考试扫描文件
 
 项目按照开课部门&通用课程方式进行归类，目前已覆盖工程师专业大多数的专业课程。
 
@@ -83,13 +83,5 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！
 其他部分的版权归原作者所有。
 
 我们不会为收集到的资料收费，或是尝试收取捐赠，我们只是尝试为后来的同学节省一些时间。
-
-## Related Works
-
-- [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles)
-- [北大计算机课程大作业](https://github.com/tongtzeho/PKUCourse)
-- [清华大学计算机系课程攻略](https://github.com/Trinkle23897/thu-cst-cracker)
-- [东南大学课程共享计划](https://github.com/zjdx1998/seucourseshare)
-- [北京大学课程资料整理](https://github.com/cbwang2016/libpku)
 
 (more to be added....)
