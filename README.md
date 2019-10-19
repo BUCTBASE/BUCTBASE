@@ -20,6 +20,8 @@
 
 使用方法：访问 https://github.com/BUCTBASE/BUCTBASE ，点击资料链接即可下载。
 
+手机用户点击view code进入目录
+
 查询功能：点击右上角find files即可进行文件查询
 
 讨论版：有想要添加的内容可以在issues内进行讨论
