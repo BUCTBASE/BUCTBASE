@@ -1,0 +1,124 @@
+clnttcp_create: connect failed, error = 10061, retrying
+%UIMSG-USER-ERROR, Did not find resource translation file "tree_node_tmpl_symb.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdscenegallery.txt"
+%UIMSG-APPLICATION-ERROR, Could not open resource file 'procmdutilappphotorealrend'
+%UIMSG-USER-ERROR, Failed to create device: ProCmdUtilAppPhotoRealRend, from resource file: procmdutilappphotorealrend
+%UIMSG-APPLICATION-ERROR, Could not open resource file 'procmdutilappphotorealrendclose'
+%UIMSG-USER-ERROR, Failed to create device: ProCmdUtilAppPhotoRealRendClose, from resource file: procmdutilappphotorealrendclose
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdmfgmilldrillcycle.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdmfgturndrillcycle.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdaogallerylist.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdpmaannotdim.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmddtlpushdimrbn.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdpmaoptdimorient.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdpmaoptdimarcattfirst.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdpmaoptdimarcattsec.txt"
+%UIMSG-USER-ERROR, Failed to preload image sp_128
+%UIMSG-USER-ERROR, Failed to preload image sp_129
+%UIMSG-USER-ERROR, Failed to preload image sp_130
+%UIMSG-USER-ERROR, Failed to preload image sp_131
+%UIMSG-USER-ERROR, Failed to preload image sp_132
+%UIMSG-USER-ERROR, Failed to preload image sp_133
+%UIMSG-USER-ERROR, Failed to preload image sp_134
+%UIMSG-USER-ERROR, Failed to preload image sp_135
+%UIMSG-USER-ERROR, Failed to preload image sp_136
+%UIMSG-USER-ERROR, Failed to preload image sp_137
+%UIMSG-USER-ERROR, Failed to preload image sp_138
+%UIMSG-USER-ERROR, Failed to preload image sp_139
+%UIMSG-USER-ERROR, Failed to preload image sp_140
+%UIMSG-USER-ERROR, Failed to preload image sp_141
+%UIMSG-USER-ERROR, Failed to preload image sp_142
+%UIMSG-USER-ERROR, Failed to preload image sp_143
+%UIMSG-USER-ERROR, Failed to preload image sp_144
+%UIMSG-USER-ERROR, Failed to preload image sp_145
+%UIMSG-USER-ERROR, Failed to preload image sp_146
+%UIMSG-USER-ERROR, Failed to preload image sp_147
+%UIMSG-USER-ERROR, Failed to preload image sp_148
+%UIMSG-USER-ERROR, Did not find resource translation file "procmdpmapshgtolinddtm.txt"
+%UIMSG-APPLICATION-ERROR, GetImageInfo: Failed to find image "imgf_col_16x16_0_33554431"
+%UIMSG-COMMAND-ERROR, uicmd_cmd_set_hover_func: NULL uiCmdCommand
+%UIMSG-COMMAND-ERROR, uicmd_cmd_set_hover_func: NULL uiCmdCommand
+%UIMSG-COMMAND-ERROR, uicmd_cmd_set_hover_func: NULL uiCmdCommand
+%UIMSG-COMMAND-ERROR, uicmd_cmd_set_hover_func: NULL uiCmdCommand
+%UIMSG-COMMAND-ERROR, uicmd_cmd_set_hover_func: hover function already set
+%UIMSG-USER-ERROR, Did not find resource translation file "pro_rbn_minitoolbars.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "appl_menu_pane.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "ProTk_DB_dev.txt"
+%UIMSG-USER-ERROR, TitleBarImage "creo_logo_parametric.ico" is the wrong size (40x40) for main_dlg_w1
+%UIMSG-APPLICATION-ERROR, Did not find item <PHTLeft.CeViewTabLay> in Tab PHTLeft.ProExplorerTab@main_dlg_w1
+%UIMSG-APPLICATION-ERROR, Failed to modify component: PHTLeft.ProExplorerTab, in device: main_dlg_w1
+%UIMSG-APPLICATION-ERROR, Did not find item <PHTLeft.HistLay> in Tab PHTLeft.ProExplorerTab@main_dlg_w1
+%UIMSG-APPLICATION-ERROR, Failed to modify component: PHTLeft.ProExplorerTab, in device: main_dlg_w1
+%UIMSG-USER-ERROR, Did not find resource translation file "view_status_bar_layout.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "igt_status_bar_layout.txt"
+%UIMSG-USER-ERROR, Did not find resource translation file "StatusBarFindToolLayout.txt"
+%UIMSG-APPLICATION-ERROR, Parent RegenStatusBarComp.NmgrNotifStatusDrawarea resizing child RegenStatusBarComp.NmgrNotifStatusButton (2,0) (40x20) to be partially viewable in (0,0) (40x20)
+%UIMSG-APPLICATION-ERROR, Component 'sash_left@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Component 'sash_left@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Component 'sash_left@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Could not find component: proe_win, in device: rmb_popup, for retrieve
+%UIMSG-COMMAND-ERROR, uicmd_cmd_bracket_func_add: NULL uiCmdCommand
+%UIMSG-APPLICATION-ERROR, Names #1 is NULL modifying List: List_msgs@msglist
+%UIMSG-APPLICATION-ERROR, Names #3 is NULL modifying List: List_msgs@msglist
+%UIMSG-APPLICATION-ERROR, Names #5 is NULL modifying List: List_msgs@msglist
+%UIMSG-COMMAND-ERROR, uicmd_context_add_pal: Fail to add palette to context
+%UIMSG-APPLICATION-ERROR, Component 'sash_swap@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Component 'sash_left@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Component 'PHTLeft.Folders@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Component 'PHTLeft.PHFolders.Nav_FT@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Component 'PHTLeft.PHFolders.TB_Shortcuts@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Component 'PHTLeft.PHFolders.sash_cmd_buttons@main_dlg_w1' is being resized when UI_redraw_Attr = FALSE
+%UIMSG-APPLICATION-ERROR, Could not open resource file 'procmdmcconfigmodelcheck'
+%UIMSG-USER-ERROR, Failed to create device: ProCmdMCConfigModelCHECK, from resource file: procmdmcconfigmodelcheck
+%UIMSG-APPLICATION-ERROR, Could not find component: user_standard_page_for_cust_ribbon_tb_start, in device: main_dlg_w1, for modify
+%UIMSG-APPLICATION-ERROR, Could not find component: user_standard_page_for_cust_ribbon_tb_end, in device: main_dlg_w1, for modify
+%UIMSG-APPLICATION-ERROR, ui_create_search_path: Ignoring non-existent folder "../../libs/prowtlibs"
+%UIMSG-APPLICATION-ERROR, ui_create_search_path: Ignoring non-existent folder "../../proe/uitools"
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu, in device: ProTk_DB_dev, to do operation
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, for retrieve
+%UIMSG-APPLICATION-ERROR, Could not find component: EFX_ActionMenu_ProTk, in device: ProTk_DB_dev, to do operation
