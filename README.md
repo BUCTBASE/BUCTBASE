@@ -19,7 +19,8 @@
 ## Usage
 
 使用方法：访问 https://github.com/BUCTBASE/BUCTBASE ，点击资料链接即可下载。
-查询功能：点击右上角find files进行文件查询
+
+查询功能：点击右上角find files即可进行文件查询
 
 ## Feature
 
