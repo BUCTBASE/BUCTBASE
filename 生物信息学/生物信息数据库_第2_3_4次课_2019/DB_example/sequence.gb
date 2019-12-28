@@ -1,0 +1,64 @@
+LOCUS       AY536759                 782 bp    mRNA    linear   VRL 15-SEP-2004
+DEFINITION  SARS coronavirus BJ01 membrane protein mRNA, complete cds.
+ACCESSION   AY536759
+VERSION     AY536759.3
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA
+            stage; Nidovirales; Coronaviridae; Coronavirinae; Betacoronavirus.
+REFERENCE   1  (bases 1 to 782)
+  AUTHORS   Li,T., Li,X., Chang,Z. and Liu,L.
+  TITLE     Identification of SARS-CoV mRNA leader sequence
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 782)
+  AUTHORS   Li,T., Li,X., Liu,L. and Chang,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JAN-2004) Institute of Biomedicine,Tsinghua
+            University, Beijing, Beijing 100084, China
+REFERENCE   3  (bases 1 to 782)
+  AUTHORS   Li,T., Li,X., Liu,L. and Chang,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-JUL-2004) Institute of Biomedicine,Tsinghua
+            University, Beijing, Beijing 100084, China
+  REMARK    Sequence update by submitter
+REFERENCE   4  (bases 1 to 782)
+  AUTHORS   Li,T., Li,X., Chang,Z. and Liu,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-SEP-2004) Institute of Biomedicine, Tsinghua
+            University, Beijing 100084, China
+  REMARK    Sequence update by submitter
+COMMENT     On Sep 15, 2004 this sequence version replaced AY536759.2.
+FEATURES             Location/Qualifiers
+     source          1..782
+                     /organism="SARS coronavirus BJ01"
+                     /mol_type="mRNA"
+                     /strain="BJ01"
+                     /db_xref="taxon:228407"
+                     /country="China"
+     CDS             117..782
+                     /codon_start=1
+                     /product="membrane protein"
+                     /protein_id="AAS48455.1"
+                     /translation="MADNGTITVEKLKQLLEQWNLVIGFLFLAWIMLLQFAYSNRNRF
+                     LYIIKLVFLWLLWPVTLACFVLAAVYRINWVTGGIAIAMACIVGLMWLSYFVASFRLF
+                     ARTRSMWSFNPETNILLNVPLRGTIVTRPLMESELVIGAVIIRGHLRMAGHSLGRCDI
+                     KDLPKEITVATSRTLSYYKLGASQRVGTDSGFAAYNRYRIGNYKLNTDHAGSNDNIAL
+                     LVQ"
+ORIGIN      
+        1 atattaggtt tttacctacc caggaaaagc caaccaacct cgatctcttg tagatctgtt
+       61 ctctaaacga actaactatt attattattc tgtttggaac tttaacattg cttatcatgg
+      121 cagacaacgg tactattacc gttgagaagc ttaaacaact cctggaacaa tggaacctag
+      181 taataggttt cctattccta gcctggatta tgttactaca atttgcctat tctaatcgga
+      241 acaggttttt gtacataata aagcttgttt tcctctggct cttgtggcca gtaacacttg
+      301 cttgttttgt gctagctgct gtctacagaa ttaattgggt gactggcggg attgcgattg
+      361 caatggcttg tattgtaggc ttgatgtggc ttagctactt cgttgcttcc ttcaggctgt
+      421 ttgctcgtac ccgctcaatg tggtcattca acccagaaac aaacattctt ctcaatgtgc
+      481 ctctccgggg gacaattgtg accagaccgc tcatggaaag tgaacttgtc attggtgctg
+      541 tgatcattcg tggtcacttg cgaatggccg gacactccct agggcgctgt gacattaagg
+      601 acctgccaaa agagatcact gtggctacat cacgaacgct ttcttattac aaattaggag
+      661 cgtcgcagcg tgtaggcact gattcaggtt ttgctgcata caaccgctac cgtattggaa
+      721 actataaatt aaatacagac cacgccggta gcaacgacaa tattgctttg ctagtacagt
+      781 aa
+//
+

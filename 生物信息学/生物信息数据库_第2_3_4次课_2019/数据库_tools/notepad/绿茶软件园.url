@@ -1,0 +1,14 @@
+[DEFAULT]
+BASEURL=http://www.ankty.com/
+[InternetShortcut]
+URL=http://www.33lc.com/
+Modified=20C6EB8EF276CA0192
+IconFile=C:\WINDOWS\system32\SHELL32.dll
+IconIndex=130
+HotKey=0
+IDList=
+[InternetShortcut.A]
+[InternetShortcut.W]
+IconFile=D:+AFyePg-.ico
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2

@@ -1,0 +1,116 @@
+LOCUS       X01714                  1609 bp    DNA     linear   BCT 23-OCT-2008
+DEFINITION  E. coli dut gene for dUTPase (EC 3.6.1.23) (deoxyuridine
+            5'-triphosphate nucleotidohydrolase).
+ACCESSION   X01714
+VERSION     X01714.1
+KEYWORDS    dUTPase; unidentified reading frame.
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales;
+            Enterobacteriaceae; Escherichia.
+REFERENCE   1  (bases 1 to 1609)
+  AUTHORS   Lundberg,L.G., Thoresson,H.O., Karlstrom,O.H. and Nyman,P.O.
+  TITLE     Nucleotide sequence of the structural gene for dUTPase of
+            Escherichia coli K-12
+  JOURNAL   EMBO J. 2 (6), 967-971 (1983)
+   PUBMED   6139280
+COMMENT     Data kindly reviewed (25-NOV-1985) by L. Lundberg.
+FEATURES             Location/Qualifiers
+     source          1..1609
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:562"
+     regulatory      286..291
+                     /regulatory_class="promoter"
+                     /note="-35 region"
+     regulatory      310..316
+                     /regulatory_class="promoter"
+                     /note="-10 region"
+     misc_feature    322..324
+                     /note="put. transcription start region"
+     regulatory      330..333
+                     /regulatory_class="ribosome_binding_site"
+                     /note="put. rRNA binding site"
+     CDS             343..798
+                     /note="unnamed protein product; dUTP-ase (aa 1-151)"
+                     /codon_start=1
+                     /transl_table=11
+                     /protein_id="CAA25859.1"
+                     /db_xref="GOA:P06968"
+                     /db_xref="InterPro:IPR008180"
+                     /db_xref="InterPro:IPR008181"
+                     /db_xref="PDB:1DUD"
+                     /db_xref="PDB:1DUP"
+                     /db_xref="PDB:1EU5"
+                     /db_xref="PDB:1EUW"
+                     /db_xref="PDB:1RN8"
+                     /db_xref="PDB:1RNJ"
+                     /db_xref="PDB:1SEH"
+                     /db_xref="PDB:1SYL"
+                     /db_xref="PDB:2HR6"
+                     /db_xref="PDB:2HRM"
+                     /db_xref="UniProtKB/Swiss-Prot:P06968"
+                     /translation="MKKIDVKILDPRVGKEFPLPTYATSGSAGLDLRACLNDAVELAP
+                     GDTTLVPTGLAIHIADPSLAAMMLPRSGLGHKHGIVLGNLVGLIDSDYQGQLMISVWN
+                     RGQDSFTIQPGERIAQMIFVPVVQAEFNLVEDFDATDRGEGGFGHSGRQ"
+     misc_feature    831..851
+                     /note="put.stem-loop structure"
+     repeat_region   831..838
+                     /note="inverted repeat A"
+     repeat_region   844..851
+                     /note="inverted repeat A'"
+     misc_feature    866..893
+                     /note="put. stem-loop structure"
+     repeat_region   866..872
+                     /note="imp. inverted repeat B"
+     repeat_region   888..893
+                     /note="imp. inverted repeat B'"
+     regulatory      889..895
+                     /regulatory_class="ribosome_binding_site"
+                     /note="pot. rRNA binding site"
+     CDS             905..1540
+                     /note="unnamed protein product; unidentified reading
+                     frame"
+                     /codon_start=1
+                     /transl_table=11
+                     /protein_id="CAA25860.1"
+                     /db_xref="GOA:P0C093"
+                     /db_xref="InterPro:IPR001647"
+                     /db_xref="InterPro:IPR009057"
+                     /db_xref="InterPro:IPR011075"
+                     /db_xref="InterPro:IPR015893"
+                     /db_xref="UniProtKB/Swiss-Prot:P0C093"
+                     /translation="MAEKQTAKRNRREEILQSLALMLESSDGSQRITTAKLAASVGVS
+                     EAALYRHFPSKTRMFDSLIEFIEDSLITRINLILKDEKDTTARLRLIVLLLLGFGERN
+                     PGLTRILTGHALMFEQDRLQGRINQLFERIEAQLRQVLREKRMREGEGYTTDETLLAS
+                     QILAFCEGMLSRFVRSEFKYRPTDDFDARWPLIAASCSNMTPDDFSSGEFL"
+ORIGIN      
+        1 cagagaaaat caaaaagcag gccacgcagg gtgatgaatt aacaataaaa atggttaaaa
+       61 accccgatat cgtcgcaggc gttgccgcac taaaagacca tcgaccctac gtcgttggat
+      121 ttgccgccga aacaaataat gtggaagaat acgcccggca aaaacgtatc cgtaaaaacc
+      181 ttgatctgat ctgcgcgaac gatgtttccc agccaactca aggatttaac agcgacaaca
+      241 acgcattaca ccttttctgg caggacggag ataaagtctt accgcttgag cgcaaagagc
+      301 tccttggcca attattactc gacgagatcg tgacccgtta tgatgaaaaa aatcgacgtt
+      361 aagattctgg acccgcgcgt tgggaaggaa tttccgctcc cgacttatgc cacctctggc
+      421 tctgccggac ttgacctgcg tgcctgtctc aacgacgccg tagaactggc tccgggtgac
+      481 actacgctgg ttccgaccgg gctggcgatt catattgccg atccttcact ggcggcaatg
+      541 atgctgccgc gctccggatt gggacataag cacggtatcg tgcttggtaa cctggtagga
+      601 ttgatcgatt ctgactatca gggccagttg atgatttccg tgtggaaccg tggtcaggac
+      661 agcttcacca ttcaacctgg cgaacgcatc gcccagatga tttttgttcc ggtagtacag
+      721 gctgaattta atctggtgga agatttcgac gccaccgacc gcggtgaagg cggctttggt
+      781 cactctggtc gtcagtaaca catacgcatc cgaataacgt cataacatag ccgcaaacat
+      841 ttcgtttgcg gtcatagcgt gggtgccgcc tggcaagtgc ttattttcag gggtattttg
+      901 taacatggca gaaaaacaaa ctgcgaaaag gaaccgtcgc gaggaaatac ttcagtctct
+      961 ggcgctgatg ctggaatcca gcgatggaag ccaacgtatc acgacggcaa aactggccgc
+     1021 ctctgtcggc gtttccgaag cggcactgta tcgccacttc cccagtaaga cccgcatgtt
+     1081 cgatagcctg attgagttta tcgaagatag cctgattact cgcatcaacc tgattctgaa
+     1141 agatgagaaa gacaccacag cgcgcctgcg tctgattgtg ttgctgcttc tcggttttgg
+     1201 tgagcgtaat cctggcctga cccgcatcct cactggtcat gcgctaatgt ttgaacagga
+     1261 tcgcctgcaa gggcgcatca accagctgtt cgagcgtatt gaagcgcagc tgcgccaggt
+     1321 attgcgtgaa aagagaatgc gtgagggtga aggttacacc accgatgaaa ccctgctggc
+     1381 aagccagatc ctggccttct gtgaaggtat gctgtcacgt tttgtccgca gcgaatttaa
+     1441 ataccgcccg acggatgatt ttgacgcccg ctggccgcta attgcggcca gttgcagtaa
+     1501 tatgacgccg gatgactttt catccggcga gtttctttaa acgccaaact cttcgcgata
+     1561 ggccttaacc gccgccagat gttccgccat ttccggcttc tcttccagg
+//
+

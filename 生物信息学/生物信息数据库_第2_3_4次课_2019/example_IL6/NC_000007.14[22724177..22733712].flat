@@ -1,0 +1,474 @@
+LOCUS       NC_000007               9536 bp    DNA     linear   CON 09-SEP-2019
+DEFINITION  Homo sapiens chromosome 7, GRCh38.p13 Primary Assembly.
+ACCESSION   NC_000007 REGION: 22724177..22733712
+VERSION     NC_000007.14  GI:568815591
+DBLINK      BioProject: PRJNA168
+            Assembly: GCF_000001405.39
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 9536)
+  CONSRTM   International Human Genome Sequencing Consortium
+  TITLE     Finishing the euchromatic sequence of the human genome
+  JOURNAL   Nature 431 (7011), 931-945 (2004)
+   PUBMED   15496913
+REFERENCE   2  (bases 1 to 9536)
+  AUTHORS   Hillier,L.W., Fulton,R.S., Fulton,L.A., Graves,T.A., Pepin,K.H.,
+            Wagner-McPherson,C., Layman,D., Maas,J., Jaeger,S., Walker,R.,
+            Wylie,K., Sekhon,M., Becker,M.C., O'Laughlin,M.D., Schaller,M.E.,
+            Fewell,G.A., Delehaunty,K.D., Miner,T.L., Nash,W.E., Cordes,M.,
+            Du,H., Sun,H., Edwards,J., Bradshaw-Cordum,H., Ali,J., Andrews,S.,
+            Isak,A., Vanbrunt,A., Nguyen,C., Du,F., Lamar,B., Courtney,L.,
+            Kalicki,J., Ozersky,P., Bielicki,L., Scott,K., Holmes,A.,
+            Harkins,R., Harris,A., Strong,C.M., Hou,S., Tomlinson,C.,
+            Dauphin-Kohlberg,S., Kozlowicz-Reilly,A., Leonard,S., Rohlfing,T.,
+            Rock,S.M., Tin-Wollam,A.M., Abbott,A., Minx,P., Maupin,R.,
+            Strowmatt,C., Latreille,P., Miller,N., Johnson,D., Murray,J.,
+            Woessner,J.P., Wendl,M.C., Yang,S.P., Schultz,B.R., Wallis,J.W.,
+            Spieth,J., Bieri,T.A., Nelson,J.O., Berkowicz,N., Wohldmann,P.E.,
+            Cook,L.L., Hickenbotham,M.T., Eldred,J., Williams,D., Bedell,J.A.,
+            Mardis,E.R., Clifton,S.W., Chissoe,S.L., Marra,M.A., Raymond,C.,
+            Haugen,E., Gillett,W., Zhou,Y., James,R., Phelps,K., Iadanoto,S.,
+            Bubb,K., Simms,E., Levy,R., Clendenning,J., Kaul,R., Kent,W.J.,
+            Furey,T.S., Baertsch,R.A., Brent,M.R., Keibler,E., Flicek,P.,
+            Bork,P., Suyama,M., Bailey,J.A., Portnoy,M.E., Torrents,D.,
+            Chinwalla,A.T., Gish,W.R., Eddy,S.R., McPherson,J.D., Olson,M.V.,
+            Eichler,E.E., Green,E.D., Waterston,R.H. and Wilson,R.K.
+  TITLE     The DNA sequence of human chromosome 7
+  JOURNAL   Nature 424 (6945), 157-164 (2003)
+   PUBMED   12853948
+REFERENCE   3  (bases 1 to 9536)
+  AUTHORS   Lander,E.S., Linton,L.M., Birren,B., Nusbaum,C., Zody,M.C.,
+            Baldwin,J., Devon,K., Dewar,K., Doyle,M., FitzHugh,W., Funke,R.,
+            Gage,D., Harris,K., Heaford,A., Howland,J., Kann,L., Lehoczky,J.,
+            LeVine,R., McEwan,P., McKernan,K., Meldrim,J., Mesirov,J.P.,
+            Miranda,C., Morris,W., Naylor,J., Raymond,C., Rosetti,M.,
+            Santos,R., Sheridan,A., Sougnez,C., Stange-Thomann,N.,
+            Stojanovic,N., Subramanian,A., Wyman,D., Rogers,J., Sulston,J.,
+            Ainscough,R., Beck,S., Bentley,D., Burton,J., Clee,C., Carter,N.,
+            Coulson,A., Deadman,R., Deloukas,P., Dunham,A., Dunham,I.,
+            Durbin,R., French,L., Grafham,D., Gregory,S., Hubbard,T.,
+            Humphray,S., Hunt,A., Jones,M., Lloyd,C., McMurray,A., Matthews,L.,
+            Mercer,S., Milne,S., Mullikin,J.C., Mungall,A., Plumb,R., Ross,M.,
+            Shownkeen,R., Sims,S., Waterston,R.H., Wilson,R.K., Hillier,L.W.,
+            McPherson,J.D., Marra,M.A., Mardis,E.R., Fulton,L.A.,
+            Chinwalla,A.T., Pepin,K.H., Gish,W.R., Chissoe,S.L., Wendl,M.C.,
+            Delehaunty,K.D., Miner,T.L., Delehaunty,A., Kramer,J.B., Cook,L.L.,
+            Fulton,R.S., Johnson,D.L., Minx,P.J., Clifton,S.W., Hawkins,T.,
+            Branscomb,E., Predki,P., Richardson,P., Wenning,S., Slezak,T.,
+            Doggett,N., Cheng,J.F., Olsen,A., Lucas,S., Elkin,C.,
+            Uberbacher,E., Frazier,M., Gibbs,R.A., Muzny,D.M., Scherer,S.E.,
+            Bouck,J.B., Sodergren,E.J., Worley,K.C., Rives,C.M., Gorrell,J.H.,
+            Metzker,M.L., Naylor,S.L., Kucherlapati,R.S., Nelson,D.L.,
+            Weinstock,G.M., Sakaki,Y., Fujiyama,A., Hattori,M., Yada,T.,
+            Toyoda,A., Itoh,T., Kawagoe,C., Watanabe,H., Totoki,Y., Taylor,T.,
+            Weissenbach,J., Heilig,R., Saurin,W., Artiguenave,F., Brottier,P.,
+            Bruls,T., Pelletier,E., Robert,C., Wincker,P., Smith,D.R.,
+            Doucette-Stamm,L., Rubenfield,M., Weinstock,K., Lee,H.M.,
+            Dubois,J., Rosenthal,A., Platzer,M., Nyakatura,G., Taudien,S.,
+            Rump,A., Yang,H., Yu,J., Wang,J., Huang,G., Gu,J., Hood,L.,
+            Rowen,L., Madan,A., Qin,S., Davis,R.W., Federspiel,N.A.,
+            Abola,A.P., Proctor,M.J., Myers,R.M., Schmutz,J., Dickson,M.,
+            Grimwood,J., Cox,D.R., Olson,M.V., Kaul,R., Raymond,C., Shimizu,N.,
+            Kawasaki,K., Minoshima,S., Evans,G.A., Athanasiou,M., Schultz,R.,
+            Roe,B.A., Chen,F., Pan,H., Ramser,J., Lehrach,H., Reinhardt,R.,
+            McCombie,W.R., de la Bastide,M., Dedhia,N., Blocker,H.,
+            Hornischer,K., Nordsiek,G., Agarwala,R., Aravind,L., Bailey,J.A.,
+            Bateman,A., Batzoglou,S., Birney,E., Bork,P., Brown,D.G.,
+            Burge,C.B., Cerutti,L., Chen,H.C., Church,D., Clamp,M.,
+            Copley,R.R., Doerks,T., Eddy,S.R., Eichler,E.E., Furey,T.S.,
+            Galagan,J., Gilbert,J.G., Harmon,C., Hayashizaki,Y., Haussler,D.,
+            Hermjakob,H., Hokamp,K., Jang,W., Johnson,L.S., Jones,T.A.,
+            Kasif,S., Kaspryzk,A., Kennedy,S., Kent,W.J., Kitts,P.,
+            Koonin,E.V., Korf,I., Kulp,D., Lancet,D., Lowe,T.M., McLysaght,A.,
+            Mikkelsen,T., Moran,J.V., Mulder,N., Pollara,V.J., Ponting,C.P.,
+            Schuler,G., Schultz,J., Slater,G., Smit,A.F., Stupka,E.,
+            Szustakowski,J., Thierry-Mieg,D., Thierry-Mieg,J., Wagner,L.,
+            Wallis,J., Wheeler,R., Williams,A., Wolf,Y.I., Wolfe,K.H.,
+            Yang,S.P., Yeh,R.F., Collins,F., Guyer,M.S., Peterson,J.,
+            Felsenfeld,A., Wetterstrand,K.A., Patrinos,A., Morgan,M.J., de
+            Jong,P., Catanese,J.J., Osoegawa,K., Shizuya,H., Choi,S. and
+            Chen,Y.J.
+  CONSRTM   International Human Genome Sequencing Consortium
+  TITLE     Initial sequencing and analysis of the human genome
+  JOURNAL   Nature 409 (6822), 860-921 (2001)
+   PUBMED   11237011
+  REMARK    Erratum:[Nature 2001 Aug 2;412(6846):565]
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CM000669.2.
+            On Feb 3, 2014 this sequence version replaced NC_000007.13.
+            Assembly Name: GRCh38.p13 Primary Assembly
+            The DNA sequence is composed of genomic sequence, primarily
+            finished clones that were sequenced as part of the Human Genome
+            Project. PCR products and WGS shotgun sequence have been added
+            where necessary to fill gaps or correct errors. All such additions
+            are manually curated by GRC staff. For more information see:
+            https://genomereference.org.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Updated annotation
+            Annotation Name             :: Homo sapiens Updated Annotation
+                                           Release 109.20190905
+            Annotation Version          :: 109.20190905
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 8.2
+            Annotation Method           :: Best-placed RefSeq; propagated
+                                           RefSeq model
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..9536
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="7"
+     gene            complement(1219..3444)
+                     /gene="IL6-AS1"
+                     /note="IL6 antisense RNA 1; Derived by automated
+                     computational analysis using gene prediction method:
+                     BestRefSeq."
+                     /db_xref="GeneID:541472"
+                     /db_xref="HGNC:HGNC:40301"
+     ncRNA           complement(join(1219..2529,3392..3444))
+                     /ncRNA_class="lncRNA"
+                     /gene="IL6-AS1"
+                     /product="IL6 antisense RNA 1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /transcript_id="NR_131935.1"
+                     /db_xref="GeneID:541472"
+                     /db_xref="HGNC:HGNC:40301"
+     gene            1713..7826
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /note="interleukin 6; Derived by automated computational
+                     analysis using gene prediction method: BestRefSeq,Gnomon."
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+     mRNA            join(1713..2082,3003..3105,3268..3458,4517..4630,
+                     5338..5484,7230..7826)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /product="interleukin 6, transcript variant X2"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 15 mRNAs, 97 ESTs, 14 long SRA
+                     reads, 8 Proteins, and 100% coverage of the annotated
+                     genomic feature by RNAseq alignments, including 7 samples
+                     with support for all annotated introns"
+                     /transcript_id="XM_011515390.2"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+     mRNA            join(2987..3458,4517..4630,5338..6845)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /product="interleukin 6, transcript variant X1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 mRNA, 5 ESTs, 1 long SRA read, 2
+                     Proteins, and 100% coverage of the annotated genomic
+                     feature by RNAseq alignments, including 89 samples with
+                     support for all annotated introns"
+                     /transcript_id="XM_005249745.5"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+     mRNA            join(3024..3105,3268..3458,4517..4630,5338..5484,
+                     7230..7822)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /product="interleukin 6, transcript variant 1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /transcript_id="NM_000600.5"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+     mRNA            join(3024..3105,3337..3458,4517..4630,5338..5484,
+                     7230..7822)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /product="interleukin 6, transcript variant 3"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /transcript_id="NM_001371096.1"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+     mRNA            join(3024..3105,4517..4630,5338..5484,7230..7822)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /product="interleukin 6, transcript variant 2"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: BestRefSeq."
+                     /transcript_id="NM_001318095.2"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+     CDS             join(3087..3105,3268..3458,4517..4630,5338..5484,
+                     7230..7397)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /note="isoform 1 precursor is encoded by transcript
+                     variant 1; Derived by automated computational analysis
+                     using gene prediction method: BestRefSeq."
+                     /codon_start=1
+                     /product="interleukin-6 isoform 1 precursor"
+                     /protein_id="NP_000591.1"
+                     /db_xref="GI:10834984"
+                     /db_xref="CCDS:CCDS5375.1"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+                     /translation="MNSFSTSAFGPVAFSLGLLLVLPAAFPAPVPPGEDSKDVAAPHR
+                     QPLTSSERIDKQIRYILDGISALRKETCNKSNMCESSKEALAENNLNLPKMAEKDGCF
+                     QSGFNEETCLVKIITGLLEFEVYLEYLQNRFESSEEQARAVQMSTKVLIQFLQKKAKN
+                     LDAITTPDPTTNASLLTKLQAQNQWLQDMTTHLILRSFKEFLQSSLRALRQM"
+     CDS             join(3087..3105,3268..3458,4517..4630,5338..5484,
+                     7230..7397)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon."
+                     /codon_start=1
+                     /product="interleukin-6 isoform X2"
+                     /protein_id="XP_011513692.1"
+                     /db_xref="GI:767945479"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+                     /translation="MNSFSTSAFGPVAFSLGLLLVLPAAFPAPVPPGEDSKDVAAPHR
+                     QPLTSSERIDKQIRYILDGISALRKETCNKSNMCESSKEALAENNLNLPKMAEKDGCF
+                     QSGFNEETCLVKIITGLLEFEVYLEYLQNRFESSEEQARAVQMSTKVLIQFLQKKAKN
+                     LDAITTPDPTTNASLLTKLQAQNQWLQDMTTHLILRSFKEFLQSSLRALRQM"
+     CDS             join(3087..3105,3337..3458,4517..4630,5338..5484,
+                     7230..7397)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /note="isoform 3 is encoded by transcript variant 3;
+                     Derived by automated computational analysis using gene
+                     prediction method: BestRefSeq."
+                     /codon_start=1
+                     /product="interleukin-6 isoform 3"
+                     /protein_id="NP_001358025.1"
+                     /db_xref="GI:1694460722"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+                     /translation="MNSFSTIPPGEDSKDVAAPHRQPLTSSERIDKQIRYILDGISAL
+                     RKETCNKSNMCESSKEALAENNLNLPKMAEKDGCFQSGFNEETCLVKIITGLLEFEVY
+                     LEYLQNRFESSEEQARAVQMSTKVLIQFLQKKAKNLDAITTPDPTTNASLLTKLQAQN
+                     QWLQDMTTHLILRSFKEFLQSSLRALRQM"
+     CDS             join(3087..3458,4517..4630,5338..5610)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon."
+                     /codon_start=1
+                     /product="interleukin-6 isoform X1"
+                     /protein_id="XP_005249802.1"
+                     /db_xref="GI:530384757"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+                     /translation="MNSFSTSKCRKSLALELPAAVEPCVREGCVAQGGLAGGQQQRQA
+                     PSCAVSSPLRSLPSGTGAFGPVAFSLGLLLVLPAAFPAPVPPGEDSKDVAAPHRQPLT
+                     SSERIDKQIRYILDGISALRKETCNKSNMCESSKEALAENNLNLPKMAEKDGCFQSGF
+                     NEETCLVKIITGLLEFEVYLEYLQNRFESSEEQARAVQMSTKVLIQFLQKKVGVSSFP
+                     QLGVGEDRLKDSVLDNSGMQCHFQKRRLHVNKRV"
+     CDS             join(4535..4630,5338..5484,7230..7397)
+                     /gene="IL6"
+                     /gene_synonym="BSF-2; BSF2; CDF; HGF; HSF; IFN-beta-2;
+                     IFNB2; IL-6"
+                     /note="isoform 2 is encoded by transcript variant 2;
+                     Derived by automated computational analysis using gene
+                     prediction method: BestRefSeq."
+                     /codon_start=1
+                     /product="interleukin-6 isoform 2"
+                     /protein_id="NP_001305024.1"
+                     /db_xref="GI:969812510"
+                     /db_xref="CCDS:CCDS83166.1"
+                     /db_xref="GeneID:3569"
+                     /db_xref="HGNC:HGNC:6018"
+                     /db_xref="MIM:147620"
+                     /translation="MCESSKEALAENNLNLPKMAEKDGCFQSGFNEETCLVKIITGLL
+                     EFEVYLEYLQNRFESSEEQARAVQMSTKVLIQFLQKKAKNLDAITTPDPTTNASLLTK
+                     LQAQNQWLQDMTTHLILRSFKEFLQSSLRALRQM"
+ORIGIN      
+        1 tggcaaaacc ccgtttctac taaaaataca aaaagtagct gggcgtggtc gcatgcatct
+       61 gtagtcccag ctactcagga ggctgaggca agagaattgc ttgaacctgg gaggcggcgg
+      121 ttgaagtgag ccaagatcat gccattgccc tccagcctgg gcaacagagc aagactcctt
+      181 ctcaagagaa aaaacaaaac aaaacaagaa aaaacaaaga atgagctctc cacgcgaaaa
+      241 atccattgag atgcaaagga aggaagctat cattgtggaa ttgcacatgt cagttacatt
+      301 aacgtttttg gagcaaggta gagctcatct ctcccacaag caaattccag cccaaagcat
+      361 tgatactaat aaagtgccat gctgcgatgt gcagggggca gacagtgtct ccaagctccc
+      421 tacacacatg ccttcccaca gtttgccctt tcttgacccc agaagcatca ggccccttca
+      481 ccctcgaggg ccactatcag gagtttgaat taatggcaat caccatgcac agggaaggct
+      541 gtggaattct gacataaaaa cacttagtgg agggcttgga aaaagtctag taggagcaag
+      601 acgcaagctg gactaattat ctaaaacaag agacctggtt tggggatctt aatgttctca
+      661 aaaaagaaaa ttattattat ttttcatttt gcactttgtg ccataaaaca ttttcaacaa
+      721 aacatagaat ctcatttctt ttgagggaaa atgattggga gaccagctca ttgctggcac
+      781 agaggcctgg ttcattcata attccttcat aggcaagaca ccaggtgaac cgatatagcc
+      841 gagctggaag agctctccaa ggcagagact ctgagccaag gaatgttcaa agagctagca
+      901 tgtattgtgg gattactatg cgccaggaat tttttacact gcatcacgtt ccatcttcac
+      961 aacagcccta gaaaggaaga actattatta cccccgtttt ataggtgaat aaacaagggc
+     1021 acaggtcctt gatgtaacag ccaggatcaa acagctggga agacgagaaa acctttccca
+     1081 ggctaggata acagaggatt tggttgaaaa tacaggcaat taggtgctac ctctgggaaa
+     1141 aggggccagg agaggaagga gacacttttc cctgcatgcc ctgatgtcct atttgaacat
+     1201 tttatcatga acacgaactt cctatttaaa aaacactttt tattgaaaag ataaatctgt
+     1261 gtgttgtatt gtgtcactca gttcaagtac ttgaaattta ttgaattgta ttttctaaaa
+     1321 aatagatagt tgagtaaaag caagctcaca ttacatagac ggatcacagt gcacggctgc
+     1381 ggagctggga gcagtggctt cgtttcatgc aggaaagaga acttggttca ggagtgtcta
+     1441 cgttgcttaa gacaggagag cactaaaaat gaaaccatcc agccatcctc ccccattttc
+     1501 attttcacac caaagaatcc caccgcggca gaggaccacc gtctctgttt agacaatcgg
+     1561 tgaagaatgg atgacctcac tttccccaac aggcgggtcc tgaaatgtta tgcacgaaac
+     1621 aaaacttgag taaatgccca acagaggtca ctgttttatc gatcttgaag agatctcttc
+     1681 ttagcaaagc aaagaaaccg attgtgaagg taacaccatg tttggtaaat aagtgttttg
+     1741 gtgttgtgca agggtctggt ttcagcctga agccatctca gagctgtctg ggtctctgga
+     1801 gactggaggg acaacctagt ctagagccca tttgcatgag accaaggatc ctcctgcaag
+     1861 agacaccatc ctgagggaag agggcttctg aaccagcttg acccaataag aaattcttgg
+     1921 gtgccgacgc ggaagcagat tcagagccta gagccgtgcc tgcgtccgta gtttccttct
+     1981 agcttctttt gatttcaaat caagacttac agggagaggg agcgataaac acaaactctg
+     2041 caagatgcca caaggtcctc ctttgacatc cccaacaaag aggtgagtag tattctcccc
+     2101 ctttctgccc tgaaccaagt gggcttcagt aatttcaggg ctccaggaga cctggggccc
+     2161 atgcaggtgc cccagtgaaa cagtggtgaa gagactcagt ggcaatgggg agagcactgg
+     2221 cagcacaagg caaacctctg gcacagagag caaagtcctc actgggagga ttcccaaggg
+     2281 gtcacttggg agagggcagg gcagcagcca acctcctcta agtgggctga agcaggtgaa
+     2341 gaaagtggca gaagccacgc ggtggcaaaa aggagtcaca cactccacct ggagacgcct
+     2401 tgaagtaact gcacgaaatt tgaggatggc caggcagttc tacaacagcc gctcacaggg
+     2461 agagccagaa cacagaagaa ctcagatgac tggtagtatt accttcttca taatcccagg
+     2521 cttggggggc tgcgatggag tcagaggaaa ctcagttcag aacatctttg gtttttacaa
+     2581 atacaaatta actggaacgc taaattctag cctgttaatc tggtcactga aaaaaaattt
+     2641 tttttttttc aaaaaacata gctttagctt attttttttc tctttgtaaa acttcgtgca
+     2701 tgacttcagc tttactcttt gtcaagacat gccaaagtgc tgagtcacta ataaaagaaa
+     2761 aaaagaaagt aaaggaagag tggttctgct tcttagcgct agcctcaatg acgacctaag
+     2821 ctgcactttt ccccctagtt gtgtcttgcc atgctaaagg acgtcacatt gcacaatctt
+     2881 aataaggttt ccaatcagcc ccacccgctc tggccccacc ctcaccctcc aacaaagatt
+     2941 tatcaaatgt gggattttcc catgagtctc aatattagag tctcaacccc caataaatat
+     3001 aggactggag atgtctgagg ctcattctgc cctcgagccc accgggaacg aaagagaagc
+     3061 tctatctccc ctccaggagc ccagctatga actccttctc cacaagtaag tgcaggaaat
+     3121 ccttagccct ggaactgcca gcggcggtcg agccctgtgt gagggagggg tgtgtggccc
+     3181 agggagggct ggcgggcggc cagcagcaga ggcaggctcc cagctgtgct gtcagctcac
+     3241 ccctgcgctc gctcccctcc ggcacaggcg ccttcggtcc agttgccttc tccctggggc
+     3301 tgctcctggt gttgcctgct gccttccctg ccccagtacc cccaggagaa gattccaaag
+     3361 atgtagccgc cccacacaga cagccactca cctcttcaga acgaattgac aaacaaattc
+     3421 ggtacatcct cgacggcatc tcagccctga gaaaggaggt gggtaggctt ggcgatgggg
+     3481 ttgaagggcc cggtgcgcat gcgttcccct tgcccctgcg tgtggccggg ggctgcctgc
+     3541 attaggaggt ctttgctggg ttctagagca ctgtagattt gaggccaacg gggccgacta
+     3601 gactgacttc tgtatttatc ctttgctggt gtcaggaagt tcctttcctt tctggaaaat
+     3661 gcagaatggg tctgaaatcc atgcccacct ttggcatgag ctgagggtta ttgcttctca
+     3721 gggcttcctt ttccctttcc aaaaaattag gtctgtgaag ctcctttttg tcccccgggc
+     3781 tttggaagga ctagaaaagt gccacctgaa aggcatgttc agcttctcag agcagttgca
+     3841 gtactttttg gttatgtaaa ctcaatggct aggattcctc aaagccattc cagctaagat
+     3901 tcatacctca gagcccacca aagtggcaaa tcataaatag gttaaagcat ctccccactt
+     3961 tcaatgcaag gtattttggt cctgtttggt agaaagaaaa gaacacagga ggggagattg
+     4021 ggagcccaca ctcgaattct ggttctgcca aaccagcctt gtgatcttgg gtaaattccc
+     4081 taccacctct ggactccatc agtaaaattg ggcgtggact aggtgatctc atagatcctt
+     4141 cctgctggaa cattctatgg cttgaattat attctcctaa ttattgtcaa aattgctgtt
+     4201 attaagtatc tactgtgtgc caggcacttt aaataaatat tgtgtctaat cttcaaaaca
+     4261 aatttgcaag gaaggttttt ggagataagg aaactgagac tcaggattaa gtaacacacc
+     4321 taaagtcaca ggtgagcttg gaactgaacc caagtgtgcc cccactccac tggaatttgc
+     4381 ttgccaggat gccaatgagt tgtagcttca tttttcttag agactttcct ggctgtggtt
+     4441 gaacaatgaa aaggccctct agtggtgttt gttttaggga cacttaggtg ataacaattc
+     4501 tggtattctt tcccagacat gtaacaagag taacatgtgt gaaagcagca aagaggcact
+     4561 ggcagaaaac aacctgaacc ttccaaagat ggctgaaaaa gatggatgct tccaatctgg
+     4621 attcaatgag gtaccaactt gtcgcactca cttttcacta ttccttaggc aaaacttctc
+     4681 cctcttgcat gcagtgcctg tatacatata gatccaggca gcaacaaaaa gtgggtaaat
+     4741 gtaaagaatg ttatgtaaat ttcatgagga ggccaacttc aagctttttt aaaggcagtt
+     4801 tattcttgga caggtatggc cagagatggt gccactgtgg tgagatttta acaactgtca
+     4861 aatgtttaaa actcccacag gtttaattag ttcatcctgg gaaaggtact ctcagggcct
+     4921 tttccctctc tggctgcccc tggcagggtc caggtctgcc ctccctccct gcccagctca
+     4981 ttctccacag tgagataacc tgcactgtct tctgattatt ttataaaagg aggttccagc
+     5041 ccagcattaa caagggcaag agtgcaggaa gaacatcaag ggggacaatc agagaaggat
+     5101 ccccattgcc acattctagc atctgttggg ctttggataa aactaattac atggggcctc
+     5161 tgattgtcca gttatttaaa atggtgctgt ccaatgtccc aaaacatgct gcctaagagg
+     5221 tacttgaagt tctctagagg agcagaggga aaagatgtcg aactgtggca attttaactt
+     5281 ttcaaattga ttctatctcc tggcgataac caattttccc accatctttc ctcttaggag
+     5341 acttgcctgg tgaaaatcat cactggtctt ttggagtttg aggtatacct agagtacctc
+     5401 cagaacagat ttgagagtag tgaggaacaa gccagagctg tgcagatgag tacaaaagtc
+     5461 ctgatccagt tcctgcagaa aaaggtgggt gtgtcctcat tccctcaact tggtgtgggg
+     5521 gaagacaggc tcaaagacag tgtcctggac aactcaggga tgcaatgcca cttccaaaag
+     5581 agaaggctac acgtaaacaa aagagtctga gaaatagttt ctgattgtta ttgttaaatc
+     5641 tttttttgtt tgtttggttg gttggctctc ttctgcaaag gacatcaata actgtatttt
+     5701 aaactatata ttaactgagg tggattttaa catcaatttt taatagtgca agagatttaa
+     5761 aaccaaaggc gggggggcgg gcagaaaaaa gtgcatccaa ctccagccag tgatccacag
+     5821 aaacaaagac caaggagcac aaaatgattt taagatttta gtcattgcca agtgacattc
+     5881 ttctcactgt ggttgtttca attctttttc ctacctttta ccagagagtt agttcagaga
+     5941 aatggtcaga gactcaaggg tggaaagagg taccaaaggc tttggccacc agtagctggc
+     6001 tattcagaca gcagggagta gacttgctgg ctagcatgtg gaggagccaa agctcaataa
+     6061 gaaggggcct agaatgaaac ccttggtgct gatcctgcct ctgccatttc tacttaagcc
+     6121 agggtttctc atatgttaac atgcatggga attccctggg catcttcttg tggtgtggag
+     6181 tctgacttag caagcctcgg gtgggtttga gggtcaaatt tctaccaggc ttatatccct
+     6241 ggtgatgctg cagaattcca ggaccacact tggaggttta aggccttcca caagttactt
+     6301 atcccatatg gtgggtctat ggaaaggtgt ttcccagtcc tctttacacc accggatcag
+     6361 tggtctttca acagatccta aagggatggt gagagggaaa ctggagaaaa gtatcagatt
+     6421 tagaggccac tgaagaaccc atattaaaat gcctttaagt atgggctctt cattcatata
+     6481 ctaaatatga actatgtgcc aggcattatt tcatatgaca gaatacaaac aaataagata
+     6541 gtgatgctgg tcaggcttgg tggctcatgc ctgtattccc taaactttgg gagcctaagg
+     6601 tgagaactcc ttgaactcct aaggccagga gttcaagacc agcctggata acatagcaag
+     6661 accccatctc tacaaaaaac caaaaccaaa caaacaaaaa tgatagtggt gcttccctca
+     6721 ggatgcttgt ggtctaatgg gagacagaac agcaaaggga tgattagaag ttggttgctg
+     6781 tgagccaggc acagtgctga tataatccca gcgctatggg aggctgaggt gggtggatca
+     6841 tttgaggcca ggagtttaag accagcctgg tcaacatggt aaaaccccat ctctacttaa
+     6901 aaatacaaaa aagttagcca ggcatggtgg catacacctg taacccagct actcaggagg
+     6961 ctgaggcaca tgaatcactt gaacccagga ggcagaggtt gctgtgcacc actgcactcc
+     7021 agcctgggtg acagaacgag accttgactc aaaaaaaaaa aaaagaagtt tgttgctatg
+     7081 gaagggtcct actcagagca ggcaccccag ttaatctcat tcaccccaca tttcacattt
+     7141 gaacatcatc ccatagccca gagcatccct ccactgcaaa ggatttattc aacatttaaa
+     7201 caatcctttt tactttcatt ttccttcagg caaagaatct agatgcaata accacccctg
+     7261 acccaaccac aaatgccagc ctgctgacga agctgcaggc acagaaccag tggctgcagg
+     7321 acatgacaac tcatctcatt ctgcgcagct ttaaggagtt cctgcagtcc agcctgaggg
+     7381 ctcttcggca aatgtagcat gggcacctca gattgttgtt gttaatgggc attccttctt
+     7441 ctggtcagaa acctgtccac tgggcacaga acttatgttg ttctctatgg agaactaaaa
+     7501 gtatgagcgt taggacacta ttttaattat ttttaattta ttaatattta aatatgtgaa
+     7561 gctgagttaa tttatgtaag tcatatttat atttttaaga agtaccactt gaaacatttt
+     7621 atgtattagt tttgaaataa taatggaaag tggctatgca gtttgaatat cctttgtttc
+     7681 agagccagat catttcttgg aaagtgtagg cttacctcaa ataaatggct aacttataca
+     7741 tatttttaaa gaaatattta tattgtattt atataatgta taaatggttt ttataccaat
+     7801 aaatggcatt ttaaaaaatt cagcaacttt gagtgtgtca cgtgaagctt aatataaaca
+     7861 agtttcttgt cactgccacc accacgacca aaaaaagcta atcaatcact atatataata
+     7921 catatatata ctatatataa taaatatata tactatatat aatacatata tacactatat
+     7981 ataatacata tatactatat atacacatat atactatata tacacatata tattatgaat
+     8041 gtatatatat agtatatata gtatatatac tatgtatgta tatatatagt atatatagta
+     8101 tatatactat gtatgtgtat atatagtata tatagtatat atagtatata tactatgtat
+     8161 gtatatatat agtatatata gtatatatac tgtgtatgta tatatatagt atatatatac
+     8221 tatatatgca tacatagtat atatgcatat atactatata tactatatat ttatatatac
+     8281 tatatactat atatactata tactgtatat atactatata tgtatgtata cgatatatat
+     8341 atatactata tatgtacaca cacacatata tatatacata taagcaccta ctacatgcca
+     8401 ggcatcatta aatgtgttgc atccatcacg tcatttaacc ccagcacttg cacactcctt
+     8461 tctggttgtg gaagactaag taatttatct aagtcaccca gctggaaggt caggcaggga
+     8521 cccagatttg aaatccaagt ctacctacct acaggtcccc tactcttaac ctgtaggtcc
+     8581 cactgcctac ccaggaactg agggatgatg tagaaaatcc caaaacatgt taatataggg
+     8641 aatacctata aacatgcaat caaagtcttt gggactatac aaccactgta taaagcataa
+     8701 caatgtacaa gcttccaaac aataactaga agttctgcct ccctcttctg ggttcctaaa
+     8761 gcactgcacc tatctacctg tcaaagcatc taccacattg taccacacct taaaatcaat
+     8821 ggtttttttc ttctcagcca gcatgtggat gcctcaataa agcagactcc tttcatgacc
+     8881 taaaactaat ttcagggggg aaaaaaagac gagctgggcg cagtggctca cgcctataat
+     8941 cccagcactt tgggaggctg aggcgggagg atcacttgag gtcagaagac cagcctggcc
+     9001 aacatggcaa aaccccgtct ctactaaaaa tacaaaaatt agctgggcgt ggtggcgcac
+     9061 ctataatccc agctactcag gaagctgaga catgataatc gcttgagcct gggaggtaga
+     9121 gcctggggct gcactccatc ctgggcaaca gagggagatt ctgtctcaaa aaataataat
+     9181 aataatataa ataaataaat aattttttta aaaaaagact ctttcctata ttaatctttg
+     9241 catcctgtgc ccatggcccc aaacctgacc aatgaaggcc ccagtaaata ttttttgaac
+     9301 aaaagaaaat atagatgatc aaagataaga aagataagaa gacacctcaa ttcttgtagg
+     9361 catatagtgg taggggaaat cactaattct gtgtgtttat gtatcttcat cttcaggaaa
+     9421 aatagcaaga attagaaaga aacactcaaa ggacttccag agaaggcaat gaatagccag
+     9481 tgcatgtaca cctacctcca tttcctttgc cactggcaat aatcttcatc tgccct
+//
