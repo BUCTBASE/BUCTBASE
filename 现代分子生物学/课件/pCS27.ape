@@ -1,0 +1,69 @@
+LOCUS             pCS27_vector        2242 bp ds-DNA   circular     29-JAN-2009
+DEFINITION  .
+ACCESSION   
+VERSION     
+SOURCE      .
+  ORGANISM  .
+COMMENT     
+COMMENT     ApEinfo:methylated:1
+FEATURES             Location/Qualifiers
+     promoter        76..149
+                     /label=pLlacO1
+                     /ApEinfo_fwdcolor=cyan
+                     /ApEinfo_revcolor=green
+     RBS             163..168
+                     /label=RBS
+                     /ApEinfo_fwdcolor=#0080c0
+                     /ApEinfo_revcolor=green
+     terminator      260..319
+                     /label=T1
+                     /ApEinfo_fwdcolor=#ff8080
+                     /ApEinfo_revcolor=green
+     rep_origin      372..1085
+                     /label=P15A
+                     /ApEinfo_fwdcolor=#80ff80
+                     /ApEinfo_revcolor=green
+     misc_feature    complement(1309..2100)
+                     /label=Kan
+                     /ApEinfo_fwdcolor=#ff8000
+                     /ApEinfo_revcolor=#ff8000
+ORIGIN
+        1 taagaaacca ttattatcat gacattaacc tataaaaata ggcgtatcac gaggcccttt
+       61 cgtcttcacc tcgagaattg tgagcggata acaattgaca ttgtgagcgg ataacaagat
+      121 actgagcaca tcagcaggac gcactgaccg aattcattaa agaggagaaa ggtaccgggc
+      181 cccccctcga ggtcgacggt atcgataagc ttgatatcga attcctgcag cccgggggat
+      241 cccatggtac gcgtgctaga ggcatcaaat aaaacgaaag gctcagtcga aagactgggc
+      301 ctttcgtttt atctgttgtt tgtcggtgaa cgctctcctg agtaggacaa atccgccgcc
+      361 ctagacctag gggatatatt ccgcttcctc gctcactgac tcgctacgct cggtcgttcg
+      421 actgcggcga gcggaaatgg cttacgaacg gggcggagat ttcctggaag atgccaggaa
+      481 gatacttaac agggaagtga gagggccgcg gcaaagccgt ttttccatag gctccgcccc
+      541 cctgacaagc atcacgaaat ctgacgctca aatcagtggt ggcgaaaccc gacaggacta
+      601 taaagatacc aggcgtttcc ccctggcggc tccctcgtgc gctctcctgt tcctgccttt
+      661 cggtttaccg gtgtcattcc gctgttatgg ccgcgtttgt ctcattccac gcctgacact
+      721 cagttccggg taggcagttc gctccaagct ggactgtatg cacgaacccc ccgttcagtc
+      781 cgaccgctgc gccttatccg gtaactatcg tcttgagtcc aacccggaaa gacatgcaaa
+      841 agcaccactg gcagcagcca ctggtaattg atttagagga gttagtcttg aagtcatgcg
+      901 ccggttaagg ctaaactgaa aggacaagtt ttggtgactg cgctcctcca agccagttac
+      961 ctcggttcaa agagttggta gctcagagaa ccttcgaaaa accgccctgc aaggcggttt
+     1021 tttcgttttc agagcaagag attacgcgca gaccaaaacg atctcaagaa gatcatctta
+     1081 ttaatcagat aaaatatttc tagatttcag tgcaatttat ctcttcaaat gtagcacctg
+     1141 aagtcagccc catacgatat aagttgttac tagtgcttgg attctcacca ataaaaaacg
+     1201 cccggcggca accgagcgtt ctgaacaaat ccagatggag ttctgaggtc attactggat
+     1261 ctatcaacag gagtccaagc gagctctcga accccagagt cccgctcaga agaactcgtc
+     1321 aagaaggcga tagaaggcga tgcgctgcga atcgggagcg gcgataccgt aaagcacgag
+     1381 gaagcggtca gcccattcgc cgccaagctc ttcagcaata tcacgggtag ccaacgctat
+     1441 gtcctgatag cggtccgcca cacccagccg gccacagtcg atgaatccag aaaagcggcc
+     1501 attttccacc atgatattcg gcaagcaggc atcgccatgg gtcacgacga gatcctcgcc
+     1561 gtcgggcatg cgcgccttga gcctggcgaa cagttcggct ggcgcgagcc cctgatgctc
+     1621 ttcgtccaga tcatcctgat cgacaagacc ggcttccatc cgagtacgtg ctcgctcgat
+     1681 gcgatgtttc gcttggtggt cgaatgggca ggtagccgga tcaagcgtat gcagccgccg
+     1741 cattgcatca gccatgatgg atactttctc ggcaggagca aggtgagatg acaggagatc
+     1801 ctgccccggc acttcgccca atagcagcca gtcccttccc gcttcagtga caacgtcgag
+     1861 cacagctgcg caaggaacgc ccgtcgtggc cagccacgat agccgcgctg cctcgtcctg
+     1921 cagttcattc agggcaccgg acaggtcggt cttgacaaaa agaaccgggc gcccctgcgc
+     1981 tgacagccgg aacacggcgg catcagagca gccgattgtc tgttgtgccc agtcatagcc
+     2041 gaatagcctc tccacccaag cggccggaga acctgcgtgc aatccatctt gttcaatcat
+     2101 gcgaaacgat cctcatcctg tctcttgatc agatcttgat cccctgcgcc atcagatcct
+     2161 tggcggcaag aaagccatcc agtttacttt gcagggcttc ccaaccttac cagagggcgc
+     2221 cccagctggc aattccgacg tc   
+//
