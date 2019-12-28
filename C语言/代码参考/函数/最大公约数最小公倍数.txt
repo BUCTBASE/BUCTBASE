@@ -1,0 +1,43 @@
+#include<stdio.h>
+int max(int x,int y)
+{
+ int z;
+    if(x<y)
+        z=y;
+ else
+  z=x;
+ return z;
+}
+int min(int x,int y)
+{
+ int z;
+    if(x>y)
+    z=y;
+ else
+  z=x;
+ return z;
+}
+int f(int x,int y)
+{
+ int i;
+ for(i=min(x,y);;i--)
+  if(x%i==0&&y%i==0)
+   break;
+    return i;
+}
+int fu(int x,int y)
+{
+    int i;
+ for(i=max(x,y);;i++)
+  if(i%x==0&&i%y==0)
+   break;
+    return i;
+}
+void main()
+{
+ int x,y;
+    printf("please input two number\n");
+ scanf("%d,%d",&x,&y);
+ printf("最大公约数为%d\n",f(x,y));
+ printf("最小公倍数为%d\n",fu(x,y));
+}

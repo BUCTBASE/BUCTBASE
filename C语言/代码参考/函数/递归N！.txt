@@ -1,0 +1,19 @@
+//µÝ¹éº¯Êý£»(¼ÆËãn!)
+#include<stdio.h>
+int x(int a)
+{
+ int j;
+ if(a==0||a==1)
+  j=1;
+ else
+  j=x(a-1)*a;
+ return j;
+}
+void main()
+{
+    int n;
+ printf("please input data \n");
+ scanf("%d",&n);
+ printf("%d\n",x(n));
+}
+

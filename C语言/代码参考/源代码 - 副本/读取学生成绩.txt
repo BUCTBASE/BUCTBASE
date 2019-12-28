@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>       //exit(0)
+void main()
+{
+    int i,j,score[5][3];
+    FILE *fp;            /*定义指向文件类型的指针变量fp*/
+    float sum,stud_aver[5];
+    if((fp=fopen("student.txt","r"))==NULL)     
+    {      printf("cannot open the file");      
+	exit(0); /*打开失败输出提示并结束*/
+    }   
+for(i=0;i<5;i++)           
+  {    for(j=0;j<3;j++)
+      	 fscanf(fp,"%d,",&score[i][j]);    
+   }
+  for(i=0;i<5;i++)
+  {    sum=0;
+        for(j=0;j<3;j++)
+ 	sum+=score[i][j];
+        stud_aver[i]=sum/3;    
+   }
+   if((fp=fopen("stud_aver.txt","w"))==NULL)   
+   {    printf("cannot open the output file");
+        exit(0);    
+   }
+   for(i=0;i<5;i++)
+         fprintf(fp,"%.2f,",stud_aver[i]);
+} //main

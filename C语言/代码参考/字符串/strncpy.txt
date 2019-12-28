@@ -1,0 +1,13 @@
+#include <iostream.h> 
+
+ #include <string.h>
+  void main(void)
+ { 
+　 char str1[10] = { "Tsinghua "}; 
+ 　 char str2[10] = { "Computer"}; 
+ cout <<strncpy(str1,str2,3)<<endl; 
+
+ } 
+  //运行结果：Comnghua11 
+ 
+//注意：字符串source中前numchars个字符将覆盖掉字符串destination中前numchars个字符！

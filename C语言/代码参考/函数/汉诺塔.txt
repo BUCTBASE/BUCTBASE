@@ -1,0 +1,24 @@
+#include<stdio.h>
+void yi(char x,char z)
+{
+ printf("%c-->%c\n",x,z);
+}
+void yid(int a,char x,char y,char z)
+{
+ if(a==1)
+  yi(x,z);
+ else
+ {
+  yid(a-1,x,z,y);
+     yi(x,z);
+  yid(a-1,y,x,z);
+ }
+}
+
+void main()
+{
+ int n;
+    printf("please input data \n");
+ scanf("%d",&n);
+ yid(n,'a','b','c');
+}

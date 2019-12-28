@@ -1,0 +1,22 @@
+
+//递归函数   f(1)=2;f(2)=3;f(n)=f(n-1)*f(n-2)  求f(n)的值；
+#include<stdio.h>
+int f(int n)
+{
+ int i;
+ if(n==1)
+  i=2;
+ else
+  if(n==2)
+   i=3;
+  else
+   i=f(n-1)*f(n-2);
+   return i;
+}
+void main()
+{
+ int a;
+ printf("please input data \n");
+ scanf("%d",&a);
+ printf("%d\n",f(a));
+}

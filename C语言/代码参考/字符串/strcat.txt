@@ -1,0 +1,14 @@
+#include <iostream.h> 
+ #include <string.h> 
+void main(void) 
+{ 
+ char str1[] = { "Tsinghua "}; 
+　 char str2[] = { "Computer"};
+　 cout <<strcpy(str1,str2)<<endl; 
+ } 
+ //运行结果：Tsinghua Computer11  
+ /*
+注意：在定义字符数组1的长度时应该考虑字符数组2的长度，
+ 因为连接后新字符串的长度为两个字符串长度之和。进行字符串连接后，
+ 字符串1的结尾符将自动被去掉，在结尾串末尾保留新字符串后面一个结尾符。
+  */ 

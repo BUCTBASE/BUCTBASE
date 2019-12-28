@@ -1,0 +1,17 @@
+#include<stdio.h>
+int han(int i)
+{
+ int j;
+ if(i==10)
+  j=1;
+ else
+  j=2*han(i+1)+2;
+ return j;
+}
+void main()
+{
+ int a;
+ printf("please input the day\n");
+ scanf("%d",&a);
+ printf("%d\n",han(a));
+}

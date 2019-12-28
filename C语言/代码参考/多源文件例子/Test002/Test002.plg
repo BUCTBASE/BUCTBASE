@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Test002 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\DELL\AppData\Local\Temp\RSP8567.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Test002.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"K:\C语言 - 韩永明\例子1\C视频源代码\多源文件例子\Test002\fun1.cpp"
+]
+Creating command line "cl.exe @C:\Users\DELL\AppData\Local\Temp\RSP8567.tmp" 
+Creating temporary file "C:\Users\DELL\AppData\Local\Temp\RSP8568.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Test002.pdb" /debug /machine:I386 /out:"Debug/Test002.exe" /pdbtype:sept 
+".\Debug\fun1.obj"
+".\Debug\multi.obj"
+]
+Creating command line "link.exe @C:\Users\DELL\AppData\Local\Temp\RSP8568.tmp"
+<h3>Output Window</h3>
+Compiling...
+fun1.cpp
+Linking...
+LINK : warning LNK4076: invalid incremental status file "Debug/Test002.ilk"; linking nonincrementally
+
+
+
+<h3>Results</h3>
+Test002.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+#include <iostream.h> 
+ #include <string.h> 
+ void main(void) 
+ { 
+ char str1[] = { "Tsinghua "}; 
+ 　 char str2[] = { "Computer"}; 
+　 cout <<strncat(str1,str2,3)<<endl; 
+ } 
+ //运行结果：Tsinghua Com

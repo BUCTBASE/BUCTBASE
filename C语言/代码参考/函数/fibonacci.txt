@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+ int a;
+ int f(int n);
+ printf("please input data \n");
+ scanf("%d",&a);
+ printf("%d\n",f(a));
+}
+int f(int n)
+{
+ int j;
+ if(n==1||n==2)
+  j=1;
+ else
+     j=f(n-1)+f(n-2);
+ return j;
+}

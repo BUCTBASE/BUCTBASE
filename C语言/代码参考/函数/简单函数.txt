@@ -1,0 +1,13 @@
+#include<stdio.h>
+void f(int a)
+{
+	a++;
+	printf("这是第%d次使用该程序\n",a);
+}
+void main()
+{
+	int i;
+	for(i=0;i<6;i++)
+		f(i);
+}
+

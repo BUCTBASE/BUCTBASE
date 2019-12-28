@@ -1,0 +1,23 @@
+ #include <iostream.h> 
+#include <string.h> 
+ void main(void) 
+ { 
+char buf1[] = "aaa"; 
+　 char buf2[] = "bbb"; 
+　 char buf3[] = "ccc"; 
+ 　 int ptr;  
+ ptr = strcmp(buf2,buf1); 
+ 　 if(ptr > 0)
+　　 cout <<"Buffer 2 is greater than buffer 1"<<endl;
+ 　 else 
+　 cout <<"Buffer 2 is less than buffer 1"<<endl;
+ 　 ptr = strcmp(buf2,buf3); 15 　 if(ptr > 0)
+　 cout <<"Buffer 2 is greater than buffer 3"<<endl;
+ 　 else 
+　 cout <<"Buffer 2 is less than buffer 3"<<endl;
+ }
+ /*
+运行结果是:
+ Buffer 2 is less than buffer 1
+Buffer 2 is greater than buffer 3
+ */

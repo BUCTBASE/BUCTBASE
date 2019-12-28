@@ -1,0 +1,65 @@
+/*编写两个函数：int f1(int a)  int f2(int a) 
+两个函数分别用来判断"完数" 和"素数"，如果是则返回1，不是则返回0。
+再编写两个函数：void f3(int a)       void f4(int a)
+两个函数分别用来输出a以内的所有完数和素数，分别要调用f1和f2实现
+在主函数中要求用户输入两个正整数m和n，以m为参数调用f3，以n为参数调用f4，
+即可得到m以内的完数，n以内的素数。
+要求程序中不能出现因为缺少函数原形声明而出现的警告。
+完全数（Perfect number），又称完美数或完备数，是一些特殊的自然数。
+它所有的真因子（即除了自身以外的约数）的和（即因子函数），恰好等于它本身。6,28,496*/
+#include<stdio.h>
+int f1(int a)
+{
+ int i,j=0;
+    for(i=1;i<a;i++)
+  if(a%i==0)
+   j+=i;
+    if(j==a)
+        return 1;
+ else
+  return 0;
+}
+int f2(int a)
+{
+ int i,j=1;
+    for(i=2;i<=a/2;i++)
+  if(a%i==0)
+   j=0;
+  return j;
+}
+void f3(int a)
+{
+ int i,j=0;
+ for(i=1;i<=a;i++)
+  if(f1(i))
+  {
+	  printf("%5d",i);
+     j++;
+     if(j%5==0)
+      printf("\n");
+  }
+ 
+}
+void f4(int a)
+{
+ int i,j=0;
+ for(i=1;i<=a;i++)
+  if(f2(i))
+  {
+	  printf("%5d",i);
+      j++;
+            if(j%5==0)
+      printf("\n");
+  }
+}
+void main()
+{
+ int m,n;
+    printf("please input data 'm' and 'n'\n");
+ scanf("%d,%d",&m,&n);
+ f3(m);
+ printf("\n");
+ f4(n);
+ printf("\n");
+}
+

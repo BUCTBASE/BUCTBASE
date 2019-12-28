@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+int f(int x)
+{
+ int z;
+    z=x*x+2*x+2;
+    return z;
+}
+void fu()
+{
+    printf("********\n");
+}
+void main()
+{
+ int a;
+    char b[10];
+ for(;;)
+ {
+  printf("input the data\n");
+  fu();
+        scanf("%d",&a);
+        a=f(a);
+  printf("º∆À„µ√%d\n",a);
+  fu();
+        printf("continue or not  ");
+        scanf("%s",b);
+        if(strcmp(b,"y")==0)
+            continue;
+  else
+   break;
+  
+ }
+
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <iostream.h> 
+ #include <string.h> 
+ void main(void) 
+ { 
+   char str[100];
+   printf("ÇëÊäÈëÒ»¸ö×Ö·û´®:\n"); 
+   scanf("%s",str); 
+   printf("The length of the string is :%d\n",strlen(str));
+}

@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{	char str[30];
+	int i;
+  	printf("Input a string:\n");
+	scanf("%s",str);              /*输入一个字符串*/
+   	for(i=0;str[i]!='\0';i++)         /*遍历整个字符串*/
+	{   
+            if(str[i]>='A'&&str[i]<='Z')  /*当前字符是大写字母*/
+		   str[i]=str[i]+32;       /*转换为小写字母*/
+        }
+	printf("The changed string is:\n %s\n",str);
+}

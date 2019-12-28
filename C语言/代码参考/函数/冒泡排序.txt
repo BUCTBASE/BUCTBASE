@@ -1,0 +1,36 @@
+int srray[20];
+#include<stdio.h>
+void scan(int srray[],int n)
+{
+	int i;
+	printf("intput data\n");
+	for(i=0;i<n;i++)
+		scanf("%d",&srray[i]);
+}
+void pai(int srray[],int n)
+{
+	int i,j;
+	int t;
+	for(i=0;i<n;i++)
+		for(j=0;j<n-1;j++)
+		{
+			
+			if(srray[j]>srray[j+1])
+			{
+				t=srray[j];
+			    srray[j]=srray[j+1];
+				srray[j+1]=t;
+			}
+		}
+		for(i=0;i<n;i++)
+			printf("%d ",srray[i]);
+}
+void main()
+{
+	int n;
+	printf("How many students?\n");
+	scanf("%d",&n);
+	scan(srray,n);
+	pai(srray,n);
+}
+

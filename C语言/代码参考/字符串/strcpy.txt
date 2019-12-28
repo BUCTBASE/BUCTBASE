@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <iostream.h> 
+ #include <string.h> 
+ void main(void)  
+{　 
+char from[100]="china";
+ char to[100]="hi";
+	//strcpy(to,from）;
+ printf("the string is :%s\n",strcpy(to,from));
+ //cout <<strcpy(str1,str2)<<endl;
+}
+//运行结果是:Computer
+//第二个字符串将覆盖掉第一个字符串的所有内容！

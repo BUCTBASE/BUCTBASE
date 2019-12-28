@@ -1,0 +1,27 @@
+#include<stdio.h>
+double f(int grade[],int n)
+{
+	int i,sum=0;
+	for(i=0;i<n;i++)
+		sum=sum+grade[i];
+	return (sum/1.0/n);
+}
+void main()
+{
+	int n1,i,n2;
+	int grade1[20],grade2[20];
+	printf("how many students\n");
+		scanf("%d",&n1);
+    printf("input the grade\n");
+	    for(i=0;i<n1;i++)
+			scanf("%d",&grade1[i]);
+    printf("how many students\n");
+		scanf("%d",&n2);
+    printf("input the grade\n");
+	    for(i=0;i<n2;i++)
+			scanf("%d",&grade2[i]);
+    printf("%5.2f\n",f(grade1,n1));
+	printf("%5.2f\n",f(grade2,n2));
+
+}
+

@@ -1,0 +1,26 @@
+/*编写一个函数： int f (int a)      
+功能：如果a<=0，则返回错误标志-1；如果a>0，则返回（1+2+3+…+a）的计算结果。
+在主函数中输入任意数n，以n为实参调用函数f，输出调用结果：返回值为-1则输出"错误"；
+否则输出"结果是：…（该值）"。
+要求程序中包括：函数f的定义、原形声明以及调用。*/
+#include<stdio.h>
+int f(int a)
+{
+  int i,j=0;
+  if(a<=0)
+   j=-1;
+  else
+   for(i=1;i<=a;i++)
+    j+=i;
+  return j;
+}
+void main()
+{
+  int n;
+  printf("please input data \n");
+  scanf("%d",&n);
+  if(f(n)==-1)
+   printf("错误\n");
+  else
+   printf("%d\n",f(n));
+}
