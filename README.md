@@ -1,5 +1,8 @@
 # BUCTBASE - 北京化工大学课程资料整理开源项目
 
+#### 找到资源后点下载，下载不了就是网络被墙了，需要VPN
+
+
 ## Preface
 
 （引用自 [QSCTech/zju-icicles](https://github.com/QSCTech/zju-icicles) ）
