@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://qunfx.cn/BUCTBASE.svg" alt="Directory Lister" width="66%">
 </p>
+
 # BUCTBASE - 北京化工大学课程资料整理开源项目
 
 #### GitHub主要是用来做永久备份，喜欢的同学们可以fork一份
