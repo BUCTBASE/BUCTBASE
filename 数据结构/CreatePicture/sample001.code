@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Code Width="1024" Height="1024">
+  <C><![CDATA[private double _sq(double x) { return x*x; }
+private double _cb(double x) { return Math.Abs(x*x*x); }
+private double _cr(double x) { return Math.Pow(x, 1.0/3.0); }
+private double cos(double x) { return Math.Cos(x); }
+private double atan2(double x, double y) { return Math.Atan2(x,y); }
+private double acos(double x) { return Math.Acos(x); }]]></C>
+  <R><![CDATA[return (int)(_sq(cos(atan2(y-512, x-512)/2))*255);]]></R>
+  <G><![CDATA[return (int)(_sq(cos(atan2(y-512,x-512)/2-2*acos(-1)/3))*255);]]></G>
+  <B><![CDATA[return (int)(_sq(cos(atan2(y-512,x-512)/2+2*acos(-1)/3))*255);]]></B>
+</Code>

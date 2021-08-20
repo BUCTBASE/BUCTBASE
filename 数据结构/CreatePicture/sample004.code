@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Code Width="1024" Height="1024">
+  <C><![CDATA[private Random _random = new Random();
+private double rand() { return _random.NextDouble(); }
+private double _r;
+private double _g;
+private double _b;]]></C>
+  <R><![CDATA[_r+=rand();int l=(int)_r % 512;return l>255?511-l:l;
+]]></R>
+  <G><![CDATA[_g+=rand();int l=(int)_g % 512;return l>255?511-l:l;
+]]></G>
+  <B><![CDATA[_b+=rand();int l=(int)_b % 512;return l>255?511-l:l;
+]]></B>
+</Code>

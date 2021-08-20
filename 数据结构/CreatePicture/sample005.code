@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Code Width="1024" Height="1024">
+  <C><![CDATA[private double sin(double x) {return Math.Sin(x);}
+private double _sq(double x) {return x*x;}]]></C>
+  <R><![CDATA[double s=3.0/(y+99);
+double _y=(y+sin((x*x+_sq(y-700)*5)/100.0/W)*35)*s;
+return ((int)((x+W)*s+_y)%2+(int)((W*2-x)*s+_y)%2)*127;
+]]></R>
+  <G><![CDATA[double s=3.0/(y+99);
+double _y=(y+sin((x*x+_sq(y-700)*5)/100.0/W)*35)*s;
+return ((int)(5*((x+W)*s+_y))%2+(int)(5*((W*2-x)*s+_y))%2)*127;
+]]></G>
+  <B><![CDATA[double s=3.0/(y+99);
+double _y=(y+sin((x*x+_sq(y-700)*5)/100.0/W)*35)*s;
+return ((int)(29*((x+W)*s+_y))%2+(int)(29*((W*2-x)*s+_y))%2)*127;
+]]></B>
+</Code>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Code Width="1024" Height="1024">
+  <C><![CDATA[//]]></C>
+  <R><![CDATA[double _x=0,_y=0;
+int k;
+for(k=0;k++<256;)
+{
+double a=_x*_x-_y*_y+(x-768.0)/512;
+_y=2*_x*_y+(y-512.0)/512;
+_x=a;
+if(_x*_x+_y*_y>4) break;
+}
+return k>31?256:k*8;]]></R>
+  <G><![CDATA[double _x=0,_y=0;
+int k;
+for(k=0;k<256;k++)
+{
+double a=_x*_x-_y*_y+(x-768.0)/512;
+_y=2*_x*_y+(y-512.0)/512;
+_x=a;
+if(_x*_x+_y*_y>4) break;
+}
+return k>63?256:k*4;]]></G>
+  <B><![CDATA[double _x=0,_y=0;
+int k;
+for(k=0;k<256;k++)
+{
+double a=_x*_x-_y*_y+(x-768.0)/512;
+_y=2*_x*_y+(y-512.0)/512;
+_x=a;
+if(_x*_x+_y*_y>4) break;
+}
+return k;]]></B>
+</Code>

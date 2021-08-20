@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Code Width="1024" Height="1024">
+  <C><![CDATA[private Random _random = new Random();
+private int r(int n) { return _random.Next() % n; }
+private int[,] _r=new int[1024,1024];
+private int[,] _g=new int[1024,1024];
+private int[,] _b=new int[1024,1024];]]></C>
+  <R><![CDATA[if (_r[x,y]==0)
+{
+    if (r(999)==0) _r[x,y]=r(256);
+    else _r[x,y] = R((x+r(2))%1024,(y+r(2))%1024);
+}
+return _r[x,y];
+]]></R>
+  <G><![CDATA[if (_g[x,y]==0)
+{
+    if (r(999)==0) _g[x,y]=r(256);
+    else _g[x,y] = G((x+r(2))%1024,(y+r(2))%1024);
+}
+return _g[x,y];
+
+]]></G>
+  <B><![CDATA[if (_b[x,y]==0)
+{
+    if (r(999)==0) _b[x,y]=r(256);
+    else _b[x,y] = B((x+r(2))%1024,(y+r(2))%1024);
+}
+return _b[x,y];
+]]></B>
+</Code>
