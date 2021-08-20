@@ -1,0 +1,1650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Current Version</key><integer>1</integer>
+	<key>Compatible Version</key><integer>1</integer>
+	<key>Application</key><string>iTunes 9.0.2</string>
+	<key>Burner Info</key><string>D: HL-DT-ST DVDRAM GSA-H42N RL00</string>
+	<key>Disc ID</key><string>8FB15488F8EECCB1</string>
+	<key>Disc Name</key><string>Saison 3 cahier</string>
+	<key>tracks</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Piste 001</string>
+			<key>Persistent ID</key><string>5057F31A1556164C</string>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>62955</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>34A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T11:59:48Z</date>
+			<key>Size</key><integer>1009413</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>1</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 002</string>
+			<key>Persistent ID</key><string>57CE777AC4C029EC</string>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>38530</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>37A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T11:59:51Z</date>
+			<key>Size</key><integer>618621</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>2</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 003</string>
+			<key>Persistent ID</key><string>A211F5437098F00F</string>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>105848</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>39A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T11:59:53Z</date>
+			<key>Size</key><integer>1695702</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>3</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 004</string>
+			<key>Persistent ID</key><string>1BC0DEF7566408CC</string>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>119510</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>3CA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T11:59:56Z</date>
+			<key>Size</key><integer>1914295</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>4</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 005</string>
+			<key>Persistent ID</key><string>1B1E397617151372</string>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>33149</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>40A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:00Z</date>
+			<key>Size</key><integer>532522</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>5</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 006</string>
+			<key>Persistent ID</key><string>803086A725A1DA77</string>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>33306</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>42A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:02Z</date>
+			<key>Size</key><integer>535029</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>6</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 007</string>
+			<key>Persistent ID</key><string>697615D470E131C5</string>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>61231</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>45A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:05Z</date>
+			<key>Size</key><integer>981828</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>7</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 008</string>
+			<key>Persistent ID</key><string>B64B803AE81B870D</string>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>33097</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>48A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:08Z</date>
+			<key>Size</key><integer>531686</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>8</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 009</string>
+			<key>Persistent ID</key><string>AF721B9D8A0D7CAD</string>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>46210</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>4AA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:10Z</date>
+			<key>Size</key><integer>741501</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>9</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 010</string>
+			<key>Persistent ID</key><string>030F9E432EC0BC12</string>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>135183</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>4DA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:13Z</date>
+			<key>Size</key><integer>2165071</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>10</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 011</string>
+			<key>Persistent ID</key><string>B962BEBA7D63D50E</string>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>162220</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>52A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:18Z</date>
+			<key>Size</key><integer>2597659</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>11</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 012</string>
+			<key>Persistent ID</key><string>BAAD23230CD2EE98</string>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>88920</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>54A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:20Z</date>
+			<key>Size</key><integer>1424866</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>12</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 013</string>
+			<key>Persistent ID</key><string>00DA01E6B2546C34</string>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>177031</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>57A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:23Z</date>
+			<key>Size</key><integer>2834642</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>13</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 014</string>
+			<key>Persistent ID</key><string>745520BD2568C141</string>
+			<key>Track Number</key><integer>14</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>168463</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>5AA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:26Z</date>
+			<key>Size</key><integer>2697551</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>14</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 015</string>
+			<key>Persistent ID</key><string>41721DAE891443C0</string>
+			<key>Track Number</key><integer>15</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>80457</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>5DA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:29Z</date>
+			<key>Size</key><integer>1289447</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>15</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 016</string>
+			<key>Persistent ID</key><string>FD6241E267DD1FE9</string>
+			<key>Track Number</key><integer>16</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>23196</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>60A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:32Z</date>
+			<key>Size</key><integer>373280</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>16</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 017</string>
+			<key>Persistent ID</key><string>61746D9415CEFA80</string>
+			<key>Track Number</key><integer>17</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>27637</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>63A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:35Z</date>
+			<key>Size</key><integer>444333</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>17</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 018</string>
+			<key>Persistent ID</key><string>6B8CD524D6AD2891</string>
+			<key>Track Number</key><integer>18</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>53733</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>66A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:38Z</date>
+			<key>Size</key><integer>861875</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>18</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 019</string>
+			<key>Persistent ID</key><string>728B691BD2455A7E</string>
+			<key>Track Number</key><integer>19</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>28734</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>69A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:41Z</date>
+			<key>Size</key><integer>461888</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>19</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 020</string>
+			<key>Persistent ID</key><string>6548C884CD580C50</string>
+			<key>Track Number</key><integer>20</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>36754</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>6CA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:44Z</date>
+			<key>Size</key><integer>590201</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>20</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 021</string>
+			<key>Persistent ID</key><string>D68E33303E5E17DF</string>
+			<key>Track Number</key><integer>21</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>136933</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>6FA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:47Z</date>
+			<key>Size</key><integer>2193075</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>21</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 022</string>
+			<key>Persistent ID</key><string>CC8DD0279C90F05F</string>
+			<key>Track Number</key><integer>22</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>47647</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>72A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:50Z</date>
+			<key>Size</key><integer>764490</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>22</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 023</string>
+			<key>Persistent ID</key><string>35092E934CB7E783</string>
+			<key>Track Number</key><integer>23</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>126275</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>74A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:52Z</date>
+			<key>Size</key><integer>2022547</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>23</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 024</string>
+			<key>Persistent ID</key><string>0706E44A881F67FE</string>
+			<key>Track Number</key><integer>24</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>56894</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>77A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:55Z</date>
+			<key>Size</key><integer>912448</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>24</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 025</string>
+			<key>Persistent ID</key><string>E1CBB882F603689F</string>
+			<key>Track Number</key><integer>25</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>14942</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>7AA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:00:58Z</date>
+			<key>Size</key><integer>241205</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>25</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 026</string>
+			<key>Persistent ID</key><string>CDAE611EEFE5B1CD</string>
+			<key>Track Number</key><integer>26</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>27297</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>7DA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:01Z</date>
+			<key>Size</key><integer>438900</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>26</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 027</string>
+			<key>Persistent ID</key><string>27EDED6749FCA386</string>
+			<key>Track Number</key><integer>27</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>22099</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>80A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:04Z</date>
+			<key>Size</key><integer>355726</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>27</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 028</string>
+			<key>Persistent ID</key><string>7A7AA358A2D709F4</string>
+			<key>Track Number</key><integer>28</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>22256</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>83A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:07Z</date>
+			<key>Size</key><integer>358234</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>28</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 029</string>
+			<key>Persistent ID</key><string>663FD1AD6A6CFE88</string>
+			<key>Track Number</key><integer>29</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>11990</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>8BA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:15Z</date>
+			<key>Size</key><integer>193976</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>29</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 030</string>
+			<key>Persistent ID</key><string>EA448F7402FEDC7F</string>
+			<key>Track Number</key><integer>30</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>34246</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>8DA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:17Z</date>
+			<key>Size</key><integer>550077</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>30</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 031</string>
+			<key>Persistent ID</key><string>03B5475BF6F3F8FE</string>
+			<key>Track Number</key><integer>31</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>28264</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>8FA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:19Z</date>
+			<key>Size</key><integer>454364</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>31</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 032</string>
+			<key>Persistent ID</key><string>96645EFBBE6B32FF</string>
+			<key>Track Number</key><integer>32</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>62928</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>92A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:22Z</date>
+			<key>Size</key><integer>1008996</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>32</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 033</string>
+			<key>Persistent ID</key><string>D31075D5C3014379</string>
+			<key>Track Number</key><integer>33</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>115200</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>96A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:26Z</date>
+			<key>Size</key><integer>1845333</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>33</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 034</string>
+			<key>Persistent ID</key><string>EB309A1159876D8A</string>
+			<key>Track Number</key><integer>34</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>134112</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>98A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:28Z</date>
+			<key>Size</key><integer>2147935</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>34</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 035</string>
+			<key>Persistent ID</key><string>8130179BE7893D5C</string>
+			<key>Track Number</key><integer>35</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>87797</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>9BA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:31Z</date>
+			<key>Size</key><integer>1406893</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>35</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 036</string>
+			<key>Persistent ID</key><string>088E04C7DAD7B48E</string>
+			<key>Track Number</key><integer>36</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>162612</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>9DA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:33Z</date>
+			<key>Size</key><integer>2603928</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>36</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 037</string>
+			<key>Persistent ID</key><string>AD1AC3E9698AD967</string>
+			<key>Track Number</key><integer>37</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>103549</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>A0A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:36Z</date>
+			<key>Size</key><integer>1658923</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>37</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 038</string>
+			<key>Persistent ID</key><string>08FF142CC025D891</string>
+			<key>Track Number</key><integer>38</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>155324</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>A3A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:39Z</date>
+			<key>Size</key><integer>2487318</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>38</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 039</string>
+			<key>Persistent ID</key><string>7CDF7D68742DF275</string>
+			<key>Track Number</key><integer>39</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>64313</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>A5A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:41Z</date>
+			<key>Size</key><integer>1031148</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>39</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 040</string>
+			<key>Persistent ID</key><string>0BCB57A21B3E9B91</string>
+			<key>Track Number</key><integer>40</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>32653</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>AAA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:46Z</date>
+			<key>Size</key><integer>524581</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>40</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 041</string>
+			<key>Persistent ID</key><string>4C793B957EE013B4</string>
+			<key>Track Number</key><integer>41</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>26958</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>AEA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:50Z</date>
+			<key>Size</key><integer>433466</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>41</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 042</string>
+			<key>Persistent ID</key><string>A5089AD521DF4DB1</string>
+			<key>Track Number</key><integer>42</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>20558</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>B0A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:52Z</date>
+			<key>Size</key><integer>331066</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>42</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 043</string>
+			<key>Persistent ID</key><string>F3944875937C01F2</string>
+			<key>Track Number</key><integer>43</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>23457</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>B3A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:01:55Z</date>
+			<key>Size</key><integer>377460</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>43</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 044</string>
+			<key>Persistent ID</key><string>DB3D627CD00616E2</string>
+			<key>Track Number</key><integer>44</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>32078</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>B8A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:00Z</date>
+			<key>Size</key><integer>515386</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>44</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 045</string>
+			<key>Persistent ID</key><string>C1AF2EE2343ACF2C</string>
+			<key>Track Number</key><integer>45</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>35474</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>BBA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:03Z</date>
+			<key>Size</key><integer>569721</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>45</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 046</string>
+			<key>Persistent ID</key><string>DFA0568B3DF1A765</string>
+			<key>Track Number</key><integer>46</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>91036</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>BEA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:06Z</date>
+			<key>Size</key><integer>1458720</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>46</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 047</string>
+			<key>Persistent ID</key><string>7F5D399983F03A5F</string>
+			<key>Track Number</key><integer>47</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>80587</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>C1A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:09Z</date>
+			<key>Size</key><integer>1291537</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>47</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 048</string>
+			<key>Persistent ID</key><string>1B3E76626473199F</string>
+			<key>Track Number</key><integer>48</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>155350</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>C4A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:12Z</date>
+			<key>Size</key><integer>2487736</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>48</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 049</string>
+			<key>Persistent ID</key><string>5ECD4A211F2B4B43</string>
+			<key>Track Number</key><integer>49</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>67134</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>C7A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:15Z</date>
+			<key>Size</key><integer>1076288</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>49</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 050</string>
+			<key>Persistent ID</key><string>8B2FF59F25BBAF18</string>
+			<key>Track Number</key><integer>50</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>53002</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>C9A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:17Z</date>
+			<key>Size</key><integer>850172</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>50</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 051</string>
+			<key>Persistent ID</key><string>E10CC364EE0E24F1</string>
+			<key>Track Number</key><integer>51</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>27297</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>CCA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:20Z</date>
+			<key>Size</key><integer>438900</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>51</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 052</string>
+			<key>Persistent ID</key><string>108708790F227871</string>
+			<key>Track Number</key><integer>52</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>25051</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>CEA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:22Z</date>
+			<key>Size</key><integer>402955</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>52</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 053</string>
+			<key>Persistent ID</key><string>5F396787B620D908</string>
+			<key>Track Number</key><integer>53</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>31738</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>D1A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:25Z</date>
+			<key>Size</key><integer>509953</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>53</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 054</string>
+			<key>Persistent ID</key><string>BDE26133921D1C33</string>
+			<key>Track Number</key><integer>54</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>10631</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>D4A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:28Z</date>
+			<key>Size</key><integer>172242</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>54</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 055</string>
+			<key>Persistent ID</key><string>3609021ED15A485E</string>
+			<key>Track Number</key><integer>55</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>32496</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>D6A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:30Z</date>
+			<key>Size</key><integer>522074</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>55</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 056</string>
+			<key>Persistent ID</key><string>6F483D2048DAC357</string>
+			<key>Track Number</key><integer>56</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>27036</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>DFA2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:39Z</date>
+			<key>Size</key><integer>434720</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>56</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 057</string>
+			<key>Persistent ID</key><string>712C8088ECA8E38B</string>
+			<key>Track Number</key><integer>57</integer>
+			<key>Track Count</key><integer>57</integer>
+			<key>Total Time</key><integer>48065</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>E3A2E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:02:43Z</date>
+			<key>Size</key><integer>771177</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>57</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 058</string>
+			<key>Persistent ID</key><string>F74E222A4352ED83</string>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>89913</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>52A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:17:22Z</date>
+			<key>Size</key><integer>1440747</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>58</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 059</string>
+			<key>Persistent ID</key><string>01D65E228BA0A7FD</string>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>128809</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>58A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:17:28Z</date>
+			<key>Size</key><integer>2063088</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>59</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 060</string>
+			<key>Persistent ID</key><string>FFBA7C33BAA0E116</string>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>66455</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>66A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:17:42Z</date>
+			<key>Size</key><integer>1065420</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>60</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 061</string>
+			<key>Persistent ID</key><string>FB3791AF30A4086B</string>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>187663</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>6FA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:17:51Z</date>
+			<key>Size</key><integer>3004750</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>61</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 062</string>
+			<key>Persistent ID</key><string>ABD671400A3A5BEB</string>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>117054</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>75A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:17:57Z</date>
+			<key>Size</key><integer>1875007</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>62</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 063</string>
+			<key>Persistent ID</key><string>522D7456596A4B73</string>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>31555</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>7AA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:02Z</date>
+			<key>Size</key><integer>507026</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>63</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 064</string>
+			<key>Persistent ID</key><string>FD35F0EE9AC354A5</string>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>27846</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>7FA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:07Z</date>
+			<key>Size</key><integer>447676</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>64</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 065</string>
+			<key>Persistent ID</key><string>68FE45044629F53B</string>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>33044</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>83A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:11Z</date>
+			<key>Size</key><integer>530850</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>65</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 066</string>
+			<key>Persistent ID</key><string>3DB821F525A3B702</string>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>24502</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>88A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:16Z</date>
+			<key>Size</key><integer>394177</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>66</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 067</string>
+			<key>Persistent ID</key><string>E5A57E44B7E5D209</string>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>22622</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>8EA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:22Z</date>
+			<key>Size</key><integer>364085</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>67</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 068</string>
+			<key>Persistent ID</key><string>8BFB649F79D51C79</string>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>26409</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>93A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:27Z</date>
+			<key>Size</key><integer>424689</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>68</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 069</string>
+			<key>Persistent ID</key><string>E04028A3FA32A2AC</string>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>114782</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>9CA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:36Z</date>
+			<key>Size</key><integer>1838645</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>69</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 070</string>
+			<key>Persistent ID</key><string>115EBA8BE35C8190</string>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>85733</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>A1A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:41Z</date>
+			<key>Size</key><integer>1373875</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>70</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 071</string>
+			<key>Persistent ID</key><string>FCF8D64B55EAE327</string>
+			<key>Track Number</key><integer>14</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>35709</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>A6A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:46Z</date>
+			<key>Size</key><integer>573483</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>71</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 072</string>
+			<key>Persistent ID</key><string>BD20B2BA98F53C5A</string>
+			<key>Track Number</key><integer>15</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>76669</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>ABA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:51Z</date>
+			<key>Size</key><integer>1228843</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>72</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 073</string>
+			<key>Persistent ID</key><string>E51482BB5A57EAE9</string>
+			<key>Track Number</key><integer>16</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>37746</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>B0A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:18:56Z</date>
+			<key>Size</key><integer>606084</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>73</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 074</string>
+			<key>Persistent ID</key><string>B38BF8E45FC4C8BA</string>
+			<key>Track Number</key><integer>17</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>211121</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>B6A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:02Z</date>
+			<key>Size</key><integer>3380079</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>74</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 075</string>
+			<key>Persistent ID</key><string>4A219B4E72FFE1D7</string>
+			<key>Track Number</key><integer>18</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>83173</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>BBA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:07Z</date>
+			<key>Size</key><integer>1332915</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>75</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 076</string>
+			<key>Persistent ID</key><string>B0B6BE6EEEA6D7DD</string>
+			<key>Track Number</key><integer>19</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>132519</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>C0A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:12Z</date>
+			<key>Size</key><integer>2122439</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>76</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 077</string>
+			<key>Persistent ID</key><string>8C655A5C4C197CB0</string>
+			<key>Track Number</key><integer>20</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>38817</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>C5A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:17Z</date>
+			<key>Size</key><integer>623220</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>77</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 078</string>
+			<key>Persistent ID</key><string>00B4A2227BB11816</string>
+			<key>Track Number</key><integer>21</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>28786</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>CAA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:22Z</date>
+			<key>Size</key><integer>462723</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>78</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 079</string>
+			<key>Persistent ID</key><string>839AB5CA74DFAF68</string>
+			<key>Track Number</key><integer>22</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>18102</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>CFA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:27Z</date>
+			<key>Size</key><integer>291778</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>79</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 080</string>
+			<key>Persistent ID</key><string>8137A1AA70F73F64</string>
+			<key>Track Number</key><integer>23</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>21394</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>D4A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:32Z</date>
+			<key>Size</key><integer>344441</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>80</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 081</string>
+			<key>Persistent ID</key><string>0C5AF2463C270329</string>
+			<key>Track Number</key><integer>24</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>23536</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>DAA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:38Z</date>
+			<key>Size</key><integer>378714</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>81</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 082</string>
+			<key>Persistent ID</key><string>23FC819FD94A3666</string>
+			<key>Track Number</key><integer>25</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>30406</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>DFA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:43Z</date>
+			<key>Size</key><integer>488637</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>82</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 083</string>
+			<key>Persistent ID</key><string>E1DC813C560CAE47</string>
+			<key>Track Number</key><integer>26</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>124969</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>E4A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:48Z</date>
+			<key>Size</key><integer>2001649</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>83</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 084</string>
+			<key>Persistent ID</key><string>6E6A7B9DF543560C</string>
+			<key>Track Number</key><integer>27</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>98507</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>E8A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:52Z</date>
+			<key>Size</key><integer>1578257</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>84</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 085</string>
+			<key>Persistent ID</key><string>9F70407EB5EE0BBE</string>
+			<key>Track Number</key><integer>28</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>119353</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>EDA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:19:57Z</date>
+			<key>Size</key><integer>1911788</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>85</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 086</string>
+			<key>Persistent ID</key><string>08EE33227A8C2E4B</string>
+			<key>Track Number</key><integer>29</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>50964</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>F2A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:02Z</date>
+			<key>Size</key><integer>817571</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>86</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 087</string>
+			<key>Persistent ID</key><string>E3DC0F2F8700CBC4</string>
+			<key>Track Number</key><integer>30</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>50076</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>F6A6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:06Z</date>
+			<key>Size</key><integer>803360</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>87</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 088</string>
+			<key>Persistent ID</key><string>CAEBF2B39C8EC155</string>
+			<key>Track Number</key><integer>31</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>117289</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>FAA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:10Z</date>
+			<key>Size</key><integer>1878769</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>88</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 089</string>
+			<key>Persistent ID</key><string>30925F10F5A47129</string>
+			<key>Track Number</key><integer>32</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>63059</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>FEA6E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:14Z</date>
+			<key>Size</key><integer>1011086</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>89</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 090</string>
+			<key>Persistent ID</key><string>F3F59F01A657E7C9</string>
+			<key>Track Number</key><integer>33</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>27010</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>02A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:18Z</date>
+			<key>Size</key><integer>434302</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>90</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 091</string>
+			<key>Persistent ID</key><string>F6F9DE6F8077536B</string>
+			<key>Track Number</key><integer>34</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>21812</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>08A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:24Z</date>
+			<key>Size</key><integer>351128</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>91</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 092</string>
+			<key>Persistent ID</key><string>3738A27E1F72DC4A</string>
+			<key>Track Number</key><integer>35</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>40045</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>10A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:32Z</date>
+			<key>Size</key><integer>642864</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>92</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 093</string>
+			<key>Persistent ID</key><string>1E680B3893EB9A8F</string>
+			<key>Track Number</key><integer>36</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>15595</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>15A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:37Z</date>
+			<key>Size</key><integer>251654</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>93</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 094</string>
+			<key>Persistent ID</key><string>F05E3CD46C7E36D0</string>
+			<key>Track Number</key><integer>37</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>31320</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>19A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:41Z</date>
+			<key>Size</key><integer>503266</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>94</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 095</string>
+			<key>Persistent ID</key><string>A32069FAB1130166</string>
+			<key>Track Number</key><integer>38</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>28786</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>1FA7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:47Z</date>
+			<key>Size</key><integer>462723</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>95</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 096</string>
+			<key>Persistent ID</key><string>8A4FA202E8FBD703</string>
+			<key>Track Number</key><integer>39</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>113893</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>23A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:51Z</date>
+			<key>Size</key><integer>1824435</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>96</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 097</string>
+			<key>Persistent ID</key><string>C3DF3663C7E3C26C</string>
+			<key>Track Number</key><integer>40</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>136228</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>28A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:20:56Z</date>
+			<key>Size</key><integer>2181790</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>97</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 098</string>
+			<key>Persistent ID</key><string>BF7066A7FBE29382</string>
+			<key>Track Number</key><integer>41</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>217965</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>2CA7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:00Z</date>
+			<key>Size</key><integer>3489584</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>98</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 099</string>
+			<key>Persistent ID</key><string>6E443BC0C7ACA3A9</string>
+			<key>Track Number</key><integer>42</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>84767</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>30A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:04Z</date>
+			<key>Size</key><integer>1358410</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>99</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 100</string>
+			<key>Persistent ID</key><string>7AA75F9AB68EB5A0</string>
+			<key>Track Number</key><integer>43</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>83330</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>3AA7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:14Z</date>
+			<key>Size</key><integer>1335422</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>100</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 101</string>
+			<key>Persistent ID</key><string>7BDA5B4951DB2108</string>
+			<key>Track Number</key><integer>44</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>8045</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>3EA7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:18Z</date>
+			<key>Size</key><integer>130864</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>101</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 102</string>
+			<key>Persistent ID</key><string>EC601C0775D7992B</string>
+			<key>Track Number</key><integer>45</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>34403</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>42A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:22Z</date>
+			<key>Size</key><integer>552585</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>102</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 103</string>
+			<key>Persistent ID</key><string>A11D1EC94A10A941</string>
+			<key>Track Number</key><integer>46</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>23640</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>48A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:28Z</date>
+			<key>Size</key><integer>380386</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>103</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 104</string>
+			<key>Persistent ID</key><string>C27407CF567F355F</string>
+			<key>Track Number</key><integer>47</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>25495</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>4DA7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:33Z</date>
+			<key>Size</key><integer>410061</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>104</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 105</string>
+			<key>Persistent ID</key><string>7C100ECDD01C9561</string>
+			<key>Track Number</key><integer>48</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>22047</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>54A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:40Z</date>
+			<key>Size</key><integer>354890</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>105</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 106</string>
+			<key>Persistent ID</key><string>2E6BA695CD2AB24D</string>
+			<key>Track Number</key><integer>49</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>24189</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>59A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:45Z</date>
+			<key>Size</key><integer>389163</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>106</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 107</string>
+			<key>Persistent ID</key><string>7DF5C0E989164474</string>
+			<key>Track Number</key><integer>50</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>37120</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>60A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:52Z</date>
+			<key>Size</key><integer>596052</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>107</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 108</string>
+			<key>Persistent ID</key><string>5362ED76B1B6E986</string>
+			<key>Track Number</key><integer>51</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>37067</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>64A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:21:56Z</date>
+			<key>Size</key><integer>595217</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>108</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+		<dict>
+			<key>Name</key><string>Piste 109</string>
+			<key>Persistent ID</key><string>9092621A0D967261</string>
+			<key>Track Number</key><integer>52</integer>
+			<key>Track Count</key><integer>52</integer>
+			<key>Total Time</key><integer>98429</integer>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Date</key><string>68A7E2D0</string>
+			<key>Date Modified</key><date>2015-01-19T12:22:00Z</date>
+			<key>Size</key><integer>1577003</integer>
+			<key>Supports ID3 Tags</key><true/>
+			<key>Numeric Path</key><string>109</string>
+			<key>File Extension</key><string>mp3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
