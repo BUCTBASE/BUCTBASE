@@ -1,0 +1,193 @@
+2-128_^1        PUMP CONTROL DEMO                                                                             PAGE 1
+
+                       1    $MOD51
+                       2    
+                       3    $TITLE(PUMP CONTROL DEMO)
+                       4    
+                       5    ; Program Start
+                       6    
+0000                   7    reset:
+0000 00                8            NOP
+0001 00                9            NOP
+                      10            ; move stack pointer past register banks
+0002 758120           11            MOV SP, #20H
+                      12    
+                      13    ; P0B4 - empty
+                      14    ; P0B3 - target
+                      15    ; P0B0 - kill button
+                      16    ; P0B1 - power button
+                      17    ; P0B2 - run button 
+                      18    ; P1B2 - forward fill
+                      19    ; P1B1 - reverse fill
+                      20    ; P1B0 - stop fill
+                      21    
+0005                  22    begin:
+                      23    
+0005                  24    start:
+0005 759000           25            MOV P1,#000H    
+                      26    ; Wait for power button to be pressed
+0008                  27    startloop:
+0008 759000           28            MOV P1,#000H 
+000B 208102           29            JB P0.1,ready   ; power button was pressed
+000E 80F8             30            JMP startloop
+                      31            
+0010                  32    ready:
+0010 759001           33            MOV P1,#001H    
+                      34    ; Wait for run button to be pressed to start filling tank
+0013                  35    readyloop:
+0013 2080EF           36            JB P0.0,start   ; kill button pressed
+0016 208202           37            JB P0.2,run     ; run button pressed
+0019 80F8             38            JMP readyloop
+                      39    
+                      40    ; start running
+001B                  41    run:
+001B 759001           42            MOV P1,#001H    
+                      43    
+                      44    ; Fill in forward direction
+001E                  45    fillfwd:
+001E 759004           46            MOV P1,#004H            ; set fwd signal to high
+0021 120093           47            CALL outputdelay        ; hold fwd signal high
+0024 120093           48            CALL outputdelay
+0027 759000           49            MOV P1,#000H            ; set fwd signal back to low
+                      50    ; Wait for set point to be reached
+002A                  51    fillfwdloop:
+002A 20800E           52            JB P0.0,fillfwdkill     ; kill button pressed
+002D 208302           53            JB P0.3,fillfwdend      ; set point reached 
+                      54    
+0030 80F8             55            JMP fillfwdloop
+                      56    ; Stop filling in fwd direction and start timer for 5 seconds
+0032                  57    fillfwdend:
+0032 759001           58            MOV P1,#001H            ; set stop signal to high
+2-128_^1        PUMP CONTROL DEMO                                                                             PAGE 2
+
+0035 120083           59            CALL timerdelay         ; go to timer routine 
+0038 020046           60            JMP fillrev             ; timer has finished, start draining
+                      61    ; Kill button was pressed during filling in fwd direction
+003B                  62    fillfwdkill:
+003B 759001           63            MOV P1,#001H            ; set stop signal to high
+003E 120093           64            CALL outputdelay        ; hold top signal high
+0041 120093           65            CALL outputdelay
+0044 80BF             66            JMP start               ; go back to beginning of program
+                      67            
+                      68    ; Fill in reverse direction (drain)     
+0046                  69    fillrev:
+0046 759002           70            MOV P1,#002H            ; set reverse signal to high
+0049 120093           71            CALL outputdelay        ; hold reverse signal
+004C 120093           72            CALL outputdelay
+004F 759000           73            MOV P1,#000H            ; set reverse signal to low
+                      74    ; Wait for tank to reach the empty point
+0052                  75    fillrevloop:
+0052 20800A           76            JB P0.0,fillrevkill     ; kill button pressed
+0055 208402           77            JB P0.4,fillrevend      ; empty point reached 
+                      78    
+0058 80F8             79            JMP fillrevloop
+                      80    ; Finished draining, go back to ready state
+005A                  81    fillrevend:
+005A 759001           82            MOV P1,#001H            ; set stop signal to high
+005D 80B1             83            JMP ready       
+                      84    ; Kill button was pressed during filling in reverse direction
+005F                  85    fillrevkill:
+005F 759001           86            MOV P1,#001H            ; send stop signal
+0062 120093           87            CALL outputdelay
+0065 120093           88            CALL outputdelay
+0068 809B             89            JMP start
+                      90    
+                      91    ; timer
+006A                  92    timerstart:
+006A 759001           93            MOV P1,#001H            ; set stop signal to high
+006D 120093           94            CALL outputdelay        ; hold stop signal
+0070 120093           95            CALL outputdelay
+0073 759000           96            MOV P1,#000H            ; set stop signal to low
+                      97    
+0076 7A39             98            MOV R2,#39H     ; call outputdelay 39H times to get 5 second delay
+                      99    ; Wait for timer to finish
+0078                 100    timerloop:
+0078 20800A          101            JB P0.0,timerdelaykill ; kill button pressed, stop timer timer
+007B 120093          102            CALL outputdelay        
+007E DAF8            103            DJNZ R2,timerloop
+0080 020092          104            JMP timerdelayend
+                     105    
+0083                 106    timerdelay:
+0083 80E5            107            JMP timerstart
+                     108    ; Kill button was pressed during timer routine, wait for power button
+0085                 109    timerdelaykill:
+0085 208102          110            JB P0.1,timerdelayready ; power button pressed
+0088 80FB            111            JMP timerdelaykill
+                     112    ; Power button was pressed, wait for run button to resume timer
+008A                 113    timerdelayready:
+008A 2082F6          114            JB P0.2,timerdelay      ; run button pressed
+008D 2080F5          115            JB P0.0, timerdelaykill ; kill button pressed
+0090 80F8            116            JMP timerdelayready
+2-128_^1        PUMP CONTROL DEMO                                                                             PAGE 3
+
+                     117    ; Timer routine finished, return from call
+0092                 118    timerdelayend:
+0092 22              119            RET
+                     120    
+                     121    ; timer delays
+0093                 122    outputdelay:
+0093 C0E0            123            PUSH ACC
+0095 ED              124            MOV A,R5
+0096 C0E0            125            PUSH ACC
+0098 EE              126            MOV A,R6
+0099 C0E0            127            PUSH ACC
+009B 7D32            128            MOV R5,#50      ; number of innerdelays to call
+009D E4              129            CLR A
+                     130    
+009E                 131    outerdelay:
+009E FE              132            MOV R6,A
+009F 1200AD          133            CALL innerdelay
+00A2 DDFA            134            DJNZ R5,outerdelay
+                     135    
+00A4 D0E0            136            POP ACC
+00A6 FE              137            MOV R6,A
+00A7 D0E0            138            POP ACC
+00A9 FD              139            MOV R5,A
+00AA D0E0            140            POP ACC
+00AC                 141    outputdelayend:
+00AC 22              142            RET
+00AD                 143    innerdelay:
+00AD 00              144            NOP
+00AE 00              145            NOP
+00AF 00              146            NOP
+00B0 00              147            NOP
+00B1 00              148            NOP
+00B2 DEF9            149            DJNZ R6,innerdelay
+00B4 22              150            RET
+                     151    
+                     152    
+                     153    END
+                     154    
+
+VERSION 1.2k ASSEMBLY COMPLETE, 0 ERRORS FOUND
+2-128_^1        PUMP CONTROL DEMO                                                                             PAGE 4
+
+ACC. . . . . . . . . . . . . . .  D ADDR  00E0H  PREDEFINED  
+BEGIN. . . . . . . . . . . . . .  C ADDR  0005H  NOT USED  
+FILLFWD. . . . . . . . . . . . .  C ADDR  001EH  NOT USED  
+FILLFWDEND . . . . . . . . . . .  C ADDR  0032H  
+FILLFWDKILL. . . . . . . . . . .  C ADDR  003BH  
+FILLFWDLOOP. . . . . . . . . . .  C ADDR  002AH  
+FILLREV. . . . . . . . . . . . .  C ADDR  0046H  
+FILLREVEND . . . . . . . . . . .  C ADDR  005AH  
+FILLREVKILL. . . . . . . . . . .  C ADDR  005FH  
+FILLREVLOOP. . . . . . . . . . .  C ADDR  0052H  
+INNERDELAY . . . . . . . . . . .  C ADDR  00ADH  
+OUTERDELAY . . . . . . . . . . .  C ADDR  009EH  
+OUTPUTDELAY. . . . . . . . . . .  C ADDR  0093H  
+OUTPUTDELAYEND . . . . . . . . .  C ADDR  00ACH  NOT USED  
+P0 . . . . . . . . . . . . . . .  D ADDR  0080H  PREDEFINED  
+P1 . . . . . . . . . . . . . . .  D ADDR  0090H  PREDEFINED  
+READY. . . . . . . . . . . . . .  C ADDR  0010H  
+READYLOOP. . . . . . . . . . . .  C ADDR  0013H  
+RESET. . . . . . . . . . . . . .  C ADDR  0000H  NOT USED  
+RUN. . . . . . . . . . . . . . .  C ADDR  001BH  
+SP . . . . . . . . . . . . . . .  D ADDR  0081H  PREDEFINED  
+START. . . . . . . . . . . . . .  C ADDR  0005H  
+STARTLOOP. . . . . . . . . . . .  C ADDR  0008H  
+TIMERDELAY . . . . . . . . . . .  C ADDR  0083H  
+TIMERDELAYEND. . . . . . . . . .  C ADDR  0092H  
+TIMERDELAYKILL . . . . . . . . .  C ADDR  0085H  
+TIMERDELAYREADY. . . . . . . . .  C ADDR  008AH  
+TIMERLOOP. . . . . . . . . . . .  C ADDR  0078H  
+TIMERSTART . . . . . . . . . . .  C ADDR  006AH  

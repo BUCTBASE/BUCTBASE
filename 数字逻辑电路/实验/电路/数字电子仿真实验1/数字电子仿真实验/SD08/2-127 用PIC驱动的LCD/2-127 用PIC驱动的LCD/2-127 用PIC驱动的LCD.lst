@@ -1,0 +1,291 @@
+MPASM  5.42                       2-127~1.ASM   3-28-2013  11:02:09         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 #include "p16f84a.inc"                  ;PIC16F84A definitions for MPASM assembler
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ;  MPASM PIC16F84A processor include
+                      00005 ; 
+                      00006 ;  (c) Copyright 1999-2011 Microchip Technology, All rights reserved
+                      00007 ;==========================================================================
+                      00008 
+                      00201         LIST
+                      00002 
+  0000000C            00003 CHAR                    EQU             0x0C                    ;CHAR TO DISPLAY ON LCD
+  0000000D            00004 CHAR_COUNT              EQU             0x0D                    ;COUNTS THE CHARACTERS ON THE MESSAGE
+  0000000E            00005 ADDR_INDEX              EQU             0x0E                    ;STARTING ADDRESS IN EEPROM
+  00000010            00006 TEMP                    EQU             0x10
+  0000                00007         CONSTANT        START_ADDR      =       0x00                    ;STARTING ADDRESS IN EEPROM
+  0050                00008         CONSTANT        LCD_CAPACITY    =       0x50                    ;CAPACITY OF LCD 4x20 = 80 = 50H
+                      00009 
+0000   1683           00010         BSF             STATUS, RP0             ;BANK 1
+0001   3080           00011         MOVLW   0x80                    ;DISABLE WEAK PULLUP RESISTORS
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0002   0081           00012         MOVWF   OPTION_REG
+0003   3000           00013         MOVLW   0x00                    ;SET PORTA AS OUTPUTS
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0004   0085           00014         MOVWF   TRISA
+0005   3000           00015         MOVLW   0x00                    ;SET PORT B AS OUTPUTS
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0006   0086           00016         MOVWF   TRISB
+0007   1283           00017         BCF             STATUS, RP0             ;BANK 0
+                      00018         
+0008   3000           00019         MOVLW   0x00                    ; SET CHARACTER COUNT TO 0
+0009   008D           00020         MOVWF   CHAR_COUNT
+                      00021 
+                      00022         ; SEND INSTRUCTIONS CLEAR DISPLAY AND TURN CURSOR OFF TO THE LCD
+000A   2030           00023         CALL    CLEAR_DISPLAY
+000B   2036           00024         CALL    ENAB_DISPLAY_CURSOR
+                      00025         
+000C                  00026 MAIN
+000C   3000           00027         MOVLW   START_ADDR              ; SET THE STARTING ADDRESS FOR EEPROM
+000D   008E           00028         MOVWF   ADDR_INDEX
+                      00029 
+000E                  00030 READ_CHAR       
+000E   080E           00031         MOVF    ADDR_INDEX,0    ; STARTING EEPROM ADDRESS
+000F   0089           00032         MOVWF   EEADR
+0010   1683           00033         BSF             STATUS,RP0              ; SWITCH TO BANK 1
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+0011   1408           00034         BSF             EECON1,RD
+0012   1283           00035         BCF             STATUS,RP0              ; SWITCH TO BANK 0
+                      00036 
+0013   0808           00037         MOVF    EEDATA,0
+0014   008C           00038         MOVWF   CHAR                    ; LOAD THE CHAR THAT WAS READ FROM EEPROM TO W
+0015   2041           00039         CALL    WRITE_CHAR              ; WRITE THE CHAR TO DISPLAY
+                      00040         
+MPASM  5.42                       2-127~1.ASM   3-28-2013  11:02:09         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0016   0A8E           00041         INCF    ADDR_INDEX,1
+0017   0A8D           00042         INCF    CHAR_COUNT,1
+                      00043         
+0018   3C00           00044         SUBLW   0x00                    ; DETECT IF THE CHAR = 00H IF SO THEN EXIT LOOP
+0019   1D03           00045         BTFSS   STATUS,2                ; EXIT IF ZERO BIT IS SET
+001A   280E           00046         GOTO    READ_CHAR
+                      00047         
+                      00048 ; START SHIFTING THE CHARACTERS 
+001B                  00049 SHIFTING
+001B   3050           00050         MOVLW   LCD_CAPACITY            ;TEMP = CHAR_COUNT - LCD_CAPACITY
+001C   020D           00051         SUBWF   CHAR_COUNT,0
+001D   0090           00052         MOVWF   TEMP
+001E   0990           00053         COMF    TEMP,1                          ;TAKE THE COMPLEMENT OF THE NEGATIVE VALUE
+001F   3002           00054         MOVLW   0x02                            ;ADD OFFSET
+0020   0790           00055         ADDWF   TEMP,1
+                      00056         
+0021                  00057 SHIFTRIGHT
+0021   301C           00058         MOVLW   0x1C                            ;SHIFT RIGHT INSTRUCTION TO LCD
+0022   203C           00059         CALL    MOVE_CURSOR_SHIFT_DISPLAY
+0023   0B90           00060         DECFSZ  TEMP,1
+0024   2821           00061         GOTO    SHIFTRIGHT
+                      00062 
+0025   3050           00063         MOVLW   LCD_CAPACITY            ;TEMP = CHAR_COUNT - LCD_CAPACITY
+0026   020D           00064         SUBWF   CHAR_COUNT,0
+0027   0090           00065         MOVWF   TEMP
+0028   0990           00066         COMF    TEMP,1                          ;TAKE THE COMPLEMENT OF THE NEGATIVE VALUE
+0029   3002           00067         MOVLW   0x02                            ;ADD OFFSET
+002A   0790           00068         ADDWF   TEMP,1
+                      00069 
+002B                  00070 SHIFTLEFT
+002B   3018           00071         MOVLW   0x18                            ;SHIFT LEFT INSTRUCTION TO LCD
+002C   203C           00072         CALL    MOVE_CURSOR_SHIFT_DISPLAY
+002D   0B90           00073         DECFSZ  TEMP,1
+002E   282B           00074         GOTO    SHIFTLEFT
+002F   281B           00075         GOTO    SHIFTING
+                      00076 
+                      00077 ; FUNCTIONS
+0030                  00078 CLEAR_DISPLAY
+0030   3001           00079         MOVLW   0x01
+0031   0086           00080         MOVWF   PORTB
+0032   1085           00081         BCF             PORTA,1         ; R/S = 0    R/W = 0
+0033   1005           00082         BCF             PORTA,0
+0034   2047           00083         CALL    TOGGLE
+0035   0008           00084         RETURN
+                      00085 
+0036                  00086 ENAB_DISPLAY_CURSOR
+0036   300D           00087         MOVLW   0x0D
+0037   0086           00088         MOVWF   PORTB
+0038   1085           00089         BCF             PORTA,1         ; R/S = 0    R/W = 0
+0039   1005           00090         BCF             PORTA,0
+003A   2047           00091         CALL    TOGGLE
+003B   0008           00092         RETURN
+                      00093 
+MPASM  5.42                       2-127~1.ASM   3-28-2013  11:02:09         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+003C                  00094 MOVE_CURSOR_SHIFT_DISPLAY
+003C   0086           00095         MOVWF   PORTB           ; THE VALUE PASSED IN W IS SET TO PORTB
+003D   1085           00096         BCF             PORTA,1         ; R/S = 0    R/W = 0
+003E   1005           00097         BCF             PORTA,0
+003F   2047           00098         CALL    TOGGLE
+0040   0008           00099         RETURN
+                      00100         
+0041                  00101 WRITE_CHAR
+0041   080C           00102         MOVF    CHAR,0          ; MOVE CHAR TO PORTB
+0042   0086           00103         MOVWF   PORTB
+0043   1485           00104         BSF             PORTA,1         ; R/S = 1    R/W = 0
+0044   1005           00105         BCF             PORTA,0
+0045   2047           00106         CALL    TOGGLE
+0046   0008           00107         RETURN
+                      00108         
+0047                  00109 TOGGLE
+0047   1505           00110         BSF             PORTA,2         ; SET ENABLE BIT
+0048   1105           00111         BCF             PORTA,2         ; CLEAR ENABLE BIT
+0049   0008           00112         RETURN
+                      00113         
+                      00114 
+                      00115         
+                      00116         END 
+MPASM  5.42                       2-127~1.ASM   3-28-2013  11:02:09         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+ADDR_INDEX                        0000000E
+C                                 00000000
+CHAR                              0000000C
+CHAR_COUNT                        0000000D
+CLEAR_DISPLAY                     00000030
+DC                                00000001
+EEADR                             00000009
+EECON1                            00000088
+EECON2                            00000089
+EEDATA                            00000008
+EEIE                              00000006
+EEIF                              00000004
+ENAB_DISPLAY_CURSOR               00000036
+F                                 00000001
+FSR                               00000004
+GIE                               00000007
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+IRP                               00000007
+LCD_CAPACITY                      00000050
+MAIN                              0000000C
+MOVE_CURSOR_SHIFT_DISPLAY         0000003C
+NOT_PD                            00000003
+NOT_RBPU                          00000007
+NOT_TO                            00000004
+OPTION_REG                        00000081
+PCL                               00000002
+PCLATH                            0000000A
+PORTA                             00000005
+PORTB                             00000006
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RD                                00000000
+MPASM  5.42                       2-127~1.ASM   3-28-2013  11:02:09         PAGE  5
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+READ_CHAR                         0000000E
+RP0                               00000005
+RP1                               00000006
+SHIFTING                          0000001B
+SHIFTLEFT                         0000002B
+SHIFTRIGHT                        00000021
+START_ADDR                        00000000
+STATUS                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+TEMP                              00000010
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TOGGLE                            00000047
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+W                                 00000000
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+WRITE_CHAR                        00000041
+Z                                 00000002
+_CONFIG                           00002007
+_CP_OFF                           00003FFF
+_CP_ON                            0000000F
+_DEVID1                           00002006
+_HS_OSC                           00003FFE
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_LP_OSC                           00003FFC
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FF7
+_RC_OSC                           00003FFF
+_WDT_OFF                          00003FFB
+_WDT_ON                           00003FFF
+MPASM  5.42                       2-127~1.ASM   3-28-2013  11:02:09         PAGE  6
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_XT_OSC                           00003FFD
+__16F84A                          00000001
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0040 : XXXXXXXXXX------ ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:    74
+Program Memory Words Free:   950
+
+
+Errors   :     0
+Warnings :     0 reported,     0 suppressed
+Messages :     4 reported,     0 suppressed
+
+

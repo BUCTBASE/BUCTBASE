@@ -1,0 +1,1106 @@
+2-129_^1        TEST DEMO                                                                                     PAGE 1
+
+                       1    ; --------------------------------------------------------------
+                       2    ; Calculator Example 
+                       3    ;
+                       4    ; This program performs calculations of the form:
+                       5    ;       operand1 operator operand2
+                       6    ; where the operator can be +,-,* or /.
+                       7    ; The operands 1 and 2 are positive integers between 0 and 9999.
+                       8    ; If the result of the calculations exceeds the range between
+                       9    ; 0 and 9999, it is considered an error.
+                      10    ;
+                      11    ; If an error occurs, "EEEE" will be applied to the output pins
+                      12    ; on ports P0 and P2.  The operands and operator are obtained by 
+                      13    ; reading the input signals received on port P1.
+                      14    ; --------------------------------------------------------------
+                      15    $MOD51
+                      16    
+                      17    $TITLE(TEST DEMO)
+                      18    
+                      19    ;
+                      20    ; Variables
+                      21    ;
+                      22    
+  0020                23    NUM1L           DATA    020H    ; low byte of first operand
+  0021                24    NUM1H           DATA    021H    ; high byte of first operand
+  0022                25    OPERATOR        DATA    022H    ; operator
+  0023                26    NUM2L           DATA    023H    ; low byte of second operand
+  0024                27    NUM2H           DATA    024H    ; high byte of second operand
+  00F8                28    EWB     DATA  0F8H  ;EWB TRACE SFR
+                      29    
+                      30    ; Program Start
+                      31    
+0000                  32    reset:
+                      33            ; move stack pointer past register banks and variables
+0000 758128           34            MOV SP, #28H
+                      35    
+0003 758000           36            MOV P0, #00H
+0006 75A000           37            MOV P2, #00H
+                      38    
+0009 020065           39            JMP readystate
+                      40    
+                      41    ; Initialize values in memory   
+000C                  42    initVar:
+000C 752000           43            MOV NUM1L, #00H
+000F 752100           44            MOV NUM1H, #00H
+0012 75220F           45            MOV OPERATOR, #0FH
+0015 752300           46            MOV NUM2L, #00H
+0018 752400           47            MOV NUM2H, #00H
+001B 7D00             48            MOV R5, #00H
+001D 7E00             49            MOV R6, #00H
+001F 22               50            RET
+                      51    
+                      52    ; Getting first operand
+0020                  53    getnum1:
+0020 E9               54            MOV A, R1
+0021 ED               55            MOV A, R5
+0022 F520             56            MOV NUM1L, A
+0024 EE               57            MOV A, R6
+0025 F521             58            MOV NUM1H, A
+2-129_^1        TEST DEMO                                                                                     PAGE 2
+
+                      59            
+0027 120194           60            CALL keyscan
+002A 120215           61            call displaynum
+                      62    
+002D E9               63            MOV A, R1
+002E 6403             64            XRL A, #03H     ; C pressed
+0030 6033             65            JZ readystate
+0032 E9               66            MOV A, R1
+0033 6402             67            XRL A, #02H     ; = pressed
+0035 600F             68            JZ getoperator
+0037 E9               69            MOV A, R1
+0038 6002             70            JZ getnum1op    ; operator pressed
+003A 80E4             71            JMP getnum1     ; continue getting first num
+                      72    
+                      73    ; Got first operand and operator
+003C                  74    getnum1op:
+003C 7D00             75            MOV R5, #00H
+003E 7E00             76            MOV R6, #00H
+0040 EF               77            MOV A, R7
+0041 F522             78            MOV OPERATOR, A
+0043 02007C           79            JMP getnum2
+                      80    
+                      81    ; Get operator
+0046                  82    getoperator:
+0046 7D00             83            MOV R5, #00H
+0048 7E00             84            MOV R6, #00H
+                      85                    
+004A 120194           86            CALL keyscan
+004D 120215           87            call displaynum
+                      88    
+0050 E9               89            MOV A, R1
+0051 6403             90            XRL A, #03H     ; C pressed
+0053 6010             91            JZ readystate
+0055 E9               92            MOV A, R1
+0056 6402             93            XRL A, #02H     ; = pressed
+0058 60EC             94            JZ getoperator
+005A E9               95            MOV A, R1
+005B 6002             96            JZ gotop        ; operator pressed
+005D 80C1             97            JMP getnum1
+                      98    
+                      99    ; Got the operator
+005F                 100    gotop:
+005F EF              101            MOV A, R7
+0060 F522            102            MOV OPERATOR, A
+0062 02007C          103            JMP getnum2
+                     104    
+                     105    ; First state that program goes to when started.
+                     106    ; Waiting for the first key press.
+0065                 107    readystate:
+0065 110C            108            CALL initVar
+                     109    
+0067 120194          110            CALL keyscan
+006A 120215          111            CALL displaynum
+                     112    
+006D E9              113            MOV A, R1
+006E 6403            114            XRL A, #03H
+0070 60F3            115            JZ readystate   ; C pressed
+0072 E9              116            MOV A, R1
+2-129_^1        TEST DEMO                                                                                     PAGE 3
+
+0073 60F0            117            JZ readystate   ; operator pressed
+0075 E9              118            MOV A, R1
+0076 6402            119            XRL A, #02H     ; = pressed
+0078 60EB            120            JZ readystate
+007A 80A4            121            JMP getnum1
+                     122    
+                     123    ; Get first digit of second operand.
+007C                 124    getnum2:
+007C ED              125            MOV A, R5
+007D F523            126            MOV NUM2L, A
+007F EE              127            MOV A, R6
+0080 F524            128            MOV NUM2H, A
+                     129    
+0082 120194          130            CALL keyscan
+0085 120215          131            call displaynum
+                     132            
+0088 E9              133            MOV A, R1
+0089 6403            134            XRL A, #03H     ; C pressed
+008B 60D8            135            JZ readystate   
+008D E9              136            MOV A, R1
+008E 6402            137            XRL A, #02H     ; = pressed
+0090 60B4            138            JZ getoperator
+0092 E9              139            MOV A, R1
+0093 60CA            140            JZ gotop        ; operator pressed
+0095 020098          141            JMP gettingnum2 ; continue getting second num
+                     142    
+                     143    ; Got first digit of second operand.  Continue
+                     144    ; getting subsequent digits of the operand or the next
+                     145    ; operator, = or C key press.
+0098                 146    gettingnum2:
+0098 ED              147            MOV A, R5
+0099 F523            148            MOV NUM2L, A
+009B EE              149            MOV A, R6
+009C F524            150            MOV NUM2H, A
+                     151    
+009E 120194          152            CALL keyscan
+00A1 120215          153            call displaynum
+                     154    
+00A4 E9              155            MOV A, R1
+00A5 6403            156            XRL A, #03H     ; C pressed
+00A7 60BC            157            JZ readystate   
+00A9 E9              158            MOV A, R1
+00AA 6402            159            XRL A, #02H     ; = pressed
+00AC 6005            160            JZ calcgetop    ; Go do calculation
+00AE E9              161            MOV A, R1 
+00AF 6017            162            JZ calcgetnum2  ; operator pressed; go do calculation
+00B1 80E5            163            JMP gettingnum2 
+                     164    
+                     165    ; calculate result then get next operator       
+00B3                 166    calcgetop:
+00B3 1200E4          167            CALL calculate
+                     168    
+00B6 E8              169            MOV A, R0
+00B7 64EE            170            XRL A, #0EEH
+00B9 7005            171            JNZ calcgetopend
+00BB E9              172            MOV A, R1
+00BC 64EE            173            XRL A, #0EEH
+00BE 60A5            174            JZ readystate
+2-129_^1        TEST DEMO                                                                                     PAGE 4
+
+00C0                 175    calcgetopend: 
+00C0 E8              176            MOV A, R0
+00C1 F520            177            MOV NUM1L, A
+00C3 E9              178            MOV A, R1
+00C4 F521            179            MOV NUM1H, A
+00C6 0146            180            JMP getoperator
+                     181    
+                     182    ; calculate result then get next number
+00C8                 183    calcgetnum2:
+00C8 1200E4          184            CALL calculate
+                     185            
+00CB E8              186            MOV A, R0
+00CC 64EE            187            XRL A, #0EEH
+00CE 7005            188            JNZ calcgetnum2end
+00D0 E9              189            MOV A, R1
+00D1 64EE            190            XRL A, #0EEH
+00D3 6090            191            JZ readystate
+00D5                 192    calcgetnum2end:
+00D5 E8              193            MOV A, R0
+00D6 F520            194            MOV NUM1L, A
+00D8 E9              195            MOV A, R1
+00D9 F521            196            MOV NUM1H, A
+00DB EF              197            MOV A, R7
+00DC F522            198            MOV OPERATOR, A
+00DE 7D00            199            MOV R5, #00H
+00E0 7E00            200            MOV R6, #00H
+00E2 8098            201            JMP getnum2
+                     202    
+                     203    ; Perform +, -, * or / operations
+                     204    ; Input:
+                     205    ; Values stored in variables NUM1L, NUM1H, OPERATOR, NUM2L, NUM2H
+                     206    ; Output:
+                     207    ; R0 - low byte of result
+                     208    ; R1 - high byte of result
+                     209    ; Valid values of R1, R0 range from 0 to 270FH (9999 in base 10)
+                     210    ; In case of overflow or error, R0 and R1 will each contain #0EEh
+00E4                 211    calculate:
+00E4 C0E0            212            PUSH ACC
+00E6 EA              213            MOV A, R2
+00E7 C0E0            214            PUSH ACC
+00E9 EB              215            MOV A, R3
+00EA C0E0            216            PUSH ACC
+00EC ED              217            MOV A, R5
+00ED C0E0            218            PUSH ACC
+00EF EE              219            MOV A, R6
+00F0 C0E0            220            PUSH ACC
+                     221    
+00F2 A820            222            MOV R0, NUM1L
+00F4 A921            223            MOV R1, NUM1H
+00F6 AA23            224            MOV R2, NUM2L
+00F8 AB24            225            MOV R3, NUM2H
+00FA                 226    calcAdd:
+00FA E522            227            MOV A, OPERATOR
+00FC B40C12          228            CJNE A, #0CH, calcSub
+00FF 120332          229            CALL ADD16
+                     230            ; check for overflow
+0102 7427            231            MOV A, #027H
+0104 99              232            SUBB A, R1
+2-129_^1        TEST DEMO                                                                                     PAGE 5
+
+0105 405E            233            JC calcoverflow
+0107 7005            234            JNZ calcAddEnd
+0109 740F            235            MOV A, #0FH
+010B 98              236            SUBB A, R0
+010C 4057            237            JC calcoverflow
+010E                 238    calcAddEnd:
+010E 020175          239            JMP calcDisplay 
+                     240            
+0111                 241    calcSub:
+0111 E522            242            MOV A, OPERATOR
+0113 B40821          243            CJNE A, #08H, calcMul
+0116 12033F          244            CALL SUB16
+0119 7427            245            MOV A, #027H
+011B 99              246            SUBB A, R1
+011C 4047            247            JC calcoverflow
+011E 7014            248            JNZ calcSubEnd
+0120 740F            249            MOV A, #0FH 
+0122 98              250            SUBB A, R0
+0123 500F            251            JNC calcSubEnd
+0125 020165          252            JMP calcoverflow
+0128                 253    calcSubNeg:             ; calculate the negative value in BCD 
+0128 E8              254            MOV A, R0       ; (not used right now - negative values are
+0129 FA              255            MOV R2, A       ; considered an overflow)
+012A E9              256            MOV A, R1
+012B FB              257            MOV R3, A
+012C 7800            258            MOV R0, #00H
+012E 7900            259            MOV R1, #00H
+0130 12033F          260            CALL SUB16
+0133 D3              261            SETB C
+0134                 262    calcSubEnd:
+0134 020175          263            JMP calcDisplay
+                     264    
+0137                 265    calcMul:
+0137 E522            266            MOV A, OPERATOR
+0139 B40418          267            CJNE A, #04H, calcDiv
+013C 12034D          268            CALL UMUL16     
+                     269            ; make sure that result is not greater than 270FH (9999 in base 10)
+013F EB              270            MOV A, R3
+0140 7023            271            JNZ calcoverflow
+0142 EA              272            MOV A, R2
+0143 7020            273            JNZ calcoverflow
+                     274            
+0145 7427            275            MOV A, #027H
+0147 99              276            SUBB A, R1
+0148 401B            277            JC calcoverflow
+014A 7005            278            JNZ calcMulEnd
+014C 740F            279            MOV A, #0FH
+014E 98              280            SUBB A, R0
+014F 4014            281            JC calcoverflow
+0151                 282    calcMulEnd:
+0151 020175          283            JMP calcDisplay
+                     284    
+0154                 285    calcDiv:
+0154 E522            286            MOV A, OPERATOR 
+0156 B4000C          287            CJNE A, #00H, calcError
+                     288            ; check divide by zero
+0159 EA              289            MOV A, R2
+015A 7003            290            JNZ calcDoDiv
+2-129_^1        TEST DEMO                                                                                     PAGE 6
+
+015C EB              291            MOV A, R3
+015D 6006            292            JZ calcDivByZero
+015F                 293    calcDoDiv:
+015F 120392          294            CALL UDIV16
+0162 020175          295            JMP calcDisplay
+                     296    
+                     297    ; error occurred
+0165                 298    calcError:
+                     299    ; divide by zero error
+0165                 300    calcDivByZero:
+                     301    ; overflow occurred
+0165                 302    calcoverflow:
+0165 78EE            303            MOV R0, #0EEH
+0167 79EE            304            MOV R1, #0EEH
+0169 74EE            305            MOV A, #0EEH
+016B F5A0            306            MOV P2, A
+016D F580            307            MOV P0, A
+016F 12030D          308            CALL delay
+0172 020185          309            JMP calcEnd
+                     310    
+                     311    ; Display results of calculation.
+                     312    ; R0 and R1 contains low and high byte of result
+0175                 313    calcDisplay:
+0175 E8              314            MOV A, R0
+0176 FD              315            MOV R5, A
+0177 E9              316            MOV A, R1
+0178 FE              317            MOV R6, A
+0179 12044A          318            CALL HEXtoDEC
+017C ED              319            MOV A, R5
+017D F5A0            320            MOV P2, A
+017F EE              321            MOV A, R6
+0180 F580            322            MOV P0, A
+0182 12030D          323            CALL delay
+                     324    
+0185                 325    calcEnd:
+0185 D0E0            326            POP ACC
+0187 EE              327            MOV A, R6
+0188 D0E0            328            POP ACC
+018A ED              329            MOV A, R5
+018B D0E0            330            POP ACC
+018D EB              331            MOV A, R3
+018E D0E0            332            POP ACC
+0190 EA              333            MOV A, R2
+0191 D0E0            334            POP ACC
+0193 22              335            RET
+                     336    
+                     337    ; Returns key pressed in (row,col) format in R7
+                     338    ; For example: R7 = #028H if 1 was pressed on the keypad
+                     339    ;            Keypad 
+                     340    ; Row # -----------------
+                     341    ; 8     | 7   8   9   + |
+                     342    ; 4     | 4   5   6   - |
+                     343    ; 2     | 1   2   3   * |
+                     344    ; 1     | C   0   =   / |
+                     345    ;       -----------------
+                     346    ; Col #   8   4   2   1
+0194                 347    keyscan:
+0194 C0E0            348            PUSH ACC
+2-129_^1        TEST DEMO                                                                                     PAGE 7
+
+0196 E8              349            MOV A, R0
+0197 C0E0            350            PUSH ACC
+0199 E9              351            MOV A, R1
+019A C0E0            352            PUSH ACC
+019C EB              353            MOV A, R3
+019D C0E0            354            PUSH ACC
+                     355    
+019F 75900F          356            MOV P1, #00FH
+                     357    
+01A2                 358    waitkeyuploop:
+01A2 E590            359            MOV A, P1
+01A4 540F            360            ANL A, #00FH
+01A6 640F            361            XRL A, #00FH
+01A8 70F8            362            JNZ waitkeyuploop
+                     363    
+01AA 75900F          364            MOV P1, #00FH
+                     365    
+01AD                 366    anykeyloop:
+01AD E590            367            MOV A, P1
+01AF 540F            368            ANL A, #00FH
+01B1 640F            369            XRL A, #00FH
+01B3 60F8            370            JZ anykeyloop
+01B5 F8              371            MOV R0, A
+01B6 640F            372            XRL A, #00FH
+01B8 FB              373            MOV R3, A
+                     374    
+01B9 120303          375            call lineclear
+01BC 7590EF          376            MOV P1, #0EFH
+01BF 7910            377            MOV R1, #010H
+01C1 00              378            NOP
+01C2 E590            379            MOV A, P1
+01C4 540F            380            ANL A, #00FH
+01C6 6B              381            XRL A, R3
+01C7 7A00            382            MOV R2,#000H
+01C9 603B            383            JZ scanmatch
+                     384    
+01CB 120303          385            call lineclear
+01CE 7590DF          386            MOV P1, #0DFH
+01D1 7920            387            MOV R1, #020H
+01D3 00              388            NOP
+01D4 E590            389            MOV A, P1
+01D6 540F            390            ANL A, #00FH
+01D8 6B              391            XRL A, R3
+01D9 7A01            392            MOV R2, #001H
+01DB 6029            393            JZ scanmatch
+                     394    
+01DD 120303          395            call lineclear
+01E0 7590BF          396            MOV P1, #0BFH
+01E3 7940            397            MOV R1, #040H
+01E5 00              398            NOP
+01E6 E590            399            MOV A, P1
+01E8 540F            400            ANL A, #00FH
+01EA 6B              401            XRL A, R3
+01EB 7A02            402            MOV R2, #002H
+01ED 6017            403            JZ scanmatch
+                     404    
+01EF 120303          405            call lineclear
+01F2 75907F          406            MOV P1, #07FH
+2-129_^1        TEST DEMO                                                                                     PAGE 8
+
+01F5 7980            407            MOV R1, #080H
+01F7 00              408            NOP
+01F8 E590            409            MOV A, P1
+01FA 540F            410            ANL A, #00FH
+01FC 6B              411            XRL A, R3
+01FD 7A03            412            MOV R2, #003H
+01FF 6005            413            JZ scanmatch
+                     414    
+0201 75900F          415            MOV P1, #00FH
+0204 808E            416            JMP keyscan
+0206                 417    scanmatch:
+0206 E9              418            MOV A, R1
+0207 48              419            ORL A, R0       ; combine into scancode
+                     420    
+0208 FF              421            MOV R7, A       ; R7 contains value in (row,col) format
+                     422            
+0209                 423    keyscanend:
+0209 D0E0            424            POP ACC
+020B FB              425            MOV R3, A
+020C D0E0            426            POP ACC
+020E F9              427            MOV R1, A
+020F D0E0            428            POP ACC
+0211 F8              429            MOV R0, A
+0212 D0E0            430            POP ACC
+0214 22              431            RET
+                     432    
+                     433    ; Input:
+                     434    ; R7 contains last key pressed
+                     435    ; R2 contains last key pressed in converted number
+                     436    ; R5 and R6 contains current number in hex
+                     437    ; Output:
+                     438    ; R5 and R6 contains new number in hex 
+0215                 439    displaynum:
+0215 EF              440            MOV A, R7
+                     441    
+0216 FC              442            MOV R4, A
+0217 EA              443            MOV A, R2
+0218 75F004          444            MOV B, #04H
+021B A4              445            MUL AB
+021C FA              446            MOV R2, A
+021D EC              447            MOV A, R4
+021E 540F            448            ANL A, #00FH
+0220 7C00            449            MOV R4, #000H
+0222                 450    getnumloop:
+0222 0C              451            INC R4
+0223 03              452            RR A
+0224 540F            453            ANL A, #00FH
+0226 70FA            454            JNZ getnumloop
+0228 1C              455            DEC R4
+0229 EA              456            MOV A, R2
+022A 2C              457            ADD A, R4
+022B F9              458            MOV R1, A
+                     459    
+022C                 460    checknum2:
+022C B40205          461            CJNE A, #02H,checknum5
+022F 7400            462            MOV A, #00H
+0231 0202B1          463            JMP numfound 
+0234                 464    checknum5:
+2-129_^1        TEST DEMO                                                                                     PAGE 9
+
+0234 B40505          465            CJNE A, #05H,checknum6
+0237 7403            466            MOV A, #03H
+0239 0202B1          467            JMP numfound 
+023C                 468    checknum6:
+023C B40605          469            CJNE A, #06H,checknum7
+023F 7402            470            MOV A, #02H
+0241 0202B1          471            JMP numfound 
+0244                 472    checknum7:
+0244 B40705          473            CJNE A, #07H,checknum9
+0247 7401            474            MOV A, #01H
+0249 0202B1          475            JMP numfound 
+024C                 476    checknum9:
+024C B40905          477            CJNE A, #09H,checknum10
+024F 7406            478            MOV A, #06H
+0251 0202B1          479            JMP numfound 
+0254                 480    checknum10:
+0254 B40A05          481            CJNE A, #0AH,checknum11
+0257 7405            482            MOV A, #05H
+0259 0202B1          483            JMP numfound 
+025C                 484    checknum11:
+025C B40B05          485            CJNE A, #0BH,checknum13
+025F 7404            486            MOV A, #04H
+0261 0202B1          487            JMP numfound 
+0264                 488    checknum13:
+0264 B40D05          489            CJNE A, #0DH,checknum14
+0267 7409            490            MOV A, #09H
+0269 0202B1          491            JMP numfound 
+026C                 492    checknum14:
+026C B40E05          493            CJNE A, #0EH,checknum15
+026F 7408            494            MOV A, #08H
+0271 0202B1          495            JMP numfound 
+0274                 496    checknum15:
+0274 B40F05          497            CJNE A, #0FH, checkclear 
+0277 7407            498            MOV A, #07H
+0279 0202B1          499            JMP numfound 
+027C                 500    checkclear:
+027C B40303          501            CJNE A, #03H, checkplus
+027F 0202F2          502            JMP cleardisplay
+                     503    
+0282                 504    checkplus:
+0282 B40C03          505            CJNE A, #0CH, checkminus
+0285 0202A6          506            JMP operatorfound 
+0288                 507    checkminus:
+0288 B40803          508            CJNE A, #08H, checkmultiply
+028B 0202A6          509            JMP operatorfound 
+028E                 510    checkmultiply:
+028E B40403          511            CJNE A, #04H, checkdivide
+0291 0202A6          512            JMP operatorfound 
+0294                 513    checkdivide:
+0294 B40003          514            CJNE A, #00H, checkequalop
+0297 0202A6          515            JMP operatorfound 
+029A                 516    checkequalop:
+029A B4010F          517            CJNE A, #01H, numnotfound
+029D 0202A0          518            JMP equalfound 
+                     519    
+02A0                 520    equalfound:
+02A0 7902            521            MOV R1, #02H
+02A2 FF              522            MOV R7, A
+2-129_^1        TEST DEMO                                                                                     PAGE 10
+
+02A3 0202C6          523            JMP displaynumend 
+                     524    
+02A6                 525    operatorfound:
+02A6 7900            526            MOV R1, #00H
+02A8 FF              527            MOV R7, A
+02A9 0202C6          528            JMP displaynumend
+                     529    
+02AC                 530    numnotfound:
+02AC 7FFF            531            MOV R7, #0FFH
+02AE 0202C6          532            JMP displaynumend
+                     533    
+02B1                 534    numfound:
+02B1 7901            535            MOV R1, #01H
+02B3 FF              536            MOV R7, A
+                     537            
+                     538            ; convert hex to dec
+02B4 12044A          539            CALL HEXtoDEC
+                     540    
+                     541            ; Shift number to the left before displaying
+02B7 1202C7          542            call shiftnumleft
+                     543    
+                     544            ; display decimal numbers       
+02BA ED              545            MOV A, R5       
+02BB F5A0            546            MOV P2, A
+                     547    
+02BD EE              548            MOV A, R6
+02BE F580            549            MOV P0, A
+02C0 12030D          550            call delay
+                     551    
+                     552            ;convert decimal to hex and store
+02C3 1203E4          553            CALL DECtoHEX
+                     554    
+02C6                 555    displaynumend:
+02C6 22              556            RET
+                     557    
+                     558    ; R7 contains the new value
+                     559    ; R5 and R6 contains low and high byte of number to be shifted
+02C7                 560    shiftnumleft:
+02C7 C0E0            561            PUSH ACC
+02C9                 562    shiftnumleftstart:
+02C9 EF              563            MOV A, R7
+02CA C0E0            564            PUSH ACC
+                     565            
+02CC EE              566            MOV A, R6
+02CD 7F04            567            MOV R7, #004H
+02CF                 568    checkhighnumloop:
+02CF 33              569            RLC A
+02D0 4005            570            JC noshift 
+02D2 DFFB            571            DJNZ R7, checkhighnumloop
+02D4 0202DD          572            JMP doshift
+                     573    
+02D7                 574    noshift:
+02D7 D0E0            575            POP ACC
+02D9 FF              576            MOV R7, A
+02DA 0202EF          577            JMP shiftnumleftend
+                     578    
+02DD                 579    doshift:
+02DD D0E0            580            POP ACC
+2-129_^1        TEST DEMO                                                                                     PAGE 11
+
+02DF C4              581            SWAP A
+02E0 7F04            582            MOV R7, #004H
+                     583    
+02E2                 584    shiftbitleft:
+02E2 33              585            RLC A
+02E3 C0E0            586            PUSH ACC
+                     587            ; Take carry bit and rotate it into R5
+02E5 ED              588            MOV A, R5
+02E6 33              589            RLC A
+02E7 FD              590            MOV R5, A
+02E8 EE              591            MOV A, R6
+02E9 33              592            RLC A
+02EA FE              593            MOV R6, A
+02EB D0E0            594            POP ACC
+02ED DFF3            595            DJNZ R7, shiftbitleft
+                     596                    
+02EF                 597    shiftnumleftend:
+02EF D0E0            598            POP ACC
+02F1 22              599            RET
+                     600    
+02F2                 601    cleardisplay:
+02F2 7D00            602            MOV R5, #00H
+02F4 ED              603            MOV A, R5
+02F5 F5A0            604            MOV P2, A
+02F7 7E00            605            MOV R6, #00H
+02F9 EE              606            MOV A, R6
+02FA F580            607            MOV P0, A
+02FC 12030D          608            CALL delay
+                     609    
+02FF 7903            610            MOV R1, #03H
+0301 80C3            611            JMP displaynumend
+                     612            
+                     613    ; Wait for no key press
+0303                 614    lineclear:
+0303 7590FF          615            MOV P1, #0FFH
+0306                 616    lineclearloop:
+0306 E590            617            MOV A, P1
+0308 64FF            618            XRL A, #0FFH
+030A 70FA            619            JNZ lineclearloop
+030C 22              620            RET
+                     621    
+030D                 622    delay:
+030D 20F819          623            JB EWB.0,delayend  ; Jump if using EWB Trace Mode
+                     624    
+0310 C0E0            625            PUSH ACC
+0312 ED              626            MOV A, R5
+0313 C0E0            627            PUSH ACC
+0315 EE              628            MOV A, R6
+0316 C0E0            629            PUSH ACC
+0318 7D32            630            MOV R5, #50  ; number of innerdelay's to call
+031A E4              631            CLR A
+                     632    
+031B                 633    outerdelay:
+031B FE              634            MOV R6, A
+031C 12032A          635            CALL innerdelay
+031F DDFA            636            DJNZ R5, outerdelay
+                     637    
+0321 D0E0            638            POP ACC
+2-129_^1        TEST DEMO                                                                                     PAGE 12
+
+0323 FE              639            MOV R6, A
+0324 D0E0            640            POP ACC
+0326 FD              641            MOV R5, A
+0327 D0E0            642            POP ACC
+0329                 643    delayend:
+0329 22              644            RET
+032A                 645    innerdelay:
+032A 00              646            NOP
+032B 00              647            NOP
+032C 00              648            NOP
+032D 00              649            NOP
+032E 00              650            NOP
+032F DEF9            651            DJNZ R6, innerdelay
+0331 22              652            RET
+                     653    
+                     654    ; 16-bit signed (2's complement) addition
+                     655    ; INPUT:
+                     656    ; R3, R2 = X
+                     657    ; R1, R0 = Y 
+                     658    ; OUTPUT:
+                     659    ; R1, R0 = SUM S = X+Y
+                     660    ; Carry C is set if S is out of range
+0332                 661    ADD16:
+0332 C0E0            662            PUSH ACC
+0334 E8              663            MOV A, R0
+0335 2A              664            ADD A, R2
+0336 F8              665            MOV R0, A
+0337 E9              666            MOV A, R1
+0338 3B              667            ADDC A, R3
+0339 F9              668            MOV R1, A
+                     669            
+033A A2D2            670            MOV C, OV       
+                     671    
+033C D0E0            672            POP ACC
+033E 22              673            RET
+                     674    
+                     675    ; 16- bit signed (2's complement) subtraction
+                     676    ; INPUT:
+                     677    ; R1, R0 = X
+                     678    ; R3, R2 = Y
+                     679    ; OUTPUT:
+                     680    ; R1, R0 = signed difference D = X-Y
+                     681    ; Carry C is set if the result D is out of range
+033F                 682    SUB16:
+033F C0E0            683            PUSH ACC
+0341 E8              684            MOV A, R0
+0342 C3              685            CLR C
+0343 9A              686            SUBB A, R2
+0344 F8              687            MOV R0, A
+0345 E9              688            MOV A, R1
+0346 9B              689            SUBB A, R3
+0347 F9              690            MOV R1, A
+0348 A2D2            691            MOV C, OV
+034A D0E0            692            POP ACC
+034C 22              693            RET
+                     694    
+                     695    ; 16-bit x 16-bit to 32-bit product unsigned mulitply
+                     696    ; INPUT:
+2-129_^1        TEST DEMO                                                                                     PAGE 13
+
+                     697    ; R1, R0 = X
+                     698    ; R3, R2 = Y
+                     699    ; OUTPUT:
+                     700    ; R3, R2, R1, R0 = product P = X*Y
+034D                 701    UMUL16:
+034D C0E0            702            PUSH ACC
+                     703    
+034F C0F0            704            PUSH B
+0351 C082            705            PUSH DPL
+0353 E8              706            MOV A, R0
+0354 8AF0            707            MOV B, R2
+0356 A4              708            MUL AB          ; multiply XL and YL
+0357 C0E0            709            PUSH ACC        ; stack result low byte
+0359 C0F0            710            PUSH B          ; stack result high byte
+035B E8              711            MOV A, R0
+035C 8BF0            712            MOV B, R3
+035E A4              713            MUL AB          ; multiply XL and YH
+035F F8              714            MOV R0, A       
+0360 D0E0            715            POP ACC
+0362 28              716            ADD A, R0
+0363 F8              717            MOV R0, A
+0364 E4              718            CLR A
+0365 35F0            719            ADDC A, B
+0367 F582            720            MOV DPL, A
+0369 EA              721            MOV A, R2
+036A 89F0            722            MOV B, R1
+036C A4              723            MUL AB          ; multiply XH and YL
+036D 28              724            ADD A, R0
+036E F8              725            MOV R0, A
+036F E582            726            MOV A, DPL
+0371 35F0            727            ADDC A, B
+0373 F582            728            MOV DPL, A
+0375 E4              729            CLR A
+0376 3400            730            ADDC A, #00H
+0378 C0E0            731            PUSH ACC        ; save intermediate carry
+037A EB              732            MOV A, R3
+037B 89F0            733            MOV B, R1
+037D A4              734            MUL AB          ; multiply XH and YH
+037E 2582            735            ADD A, DPL
+0380 FA              736            MOV R2, A
+0381 D0E0            737            POP ACC         ; retrieve carry
+0383 35F0            738            ADDC A, B
+0385 FB              739            MOV R3, A
+0386 E8              740            MOV A, R0       
+0387 F9              741            MOV R1, A
+0388 D0E0            742            POP ACC         ; retrieve result low byte
+038A F8              743            MOV R0, A
+                     744    
+038B D082            745            POP DPL
+038D D0F0            746            POP B
+                     747    
+038F D0E0            748            POP ACC
+0391 22              749            RET
+                     750    
+                     751    ; 16-bit / 16-bit to 16-bit quotient and remainder unsigned divide
+                     752    ; Input:
+                     753    ; R1, R0 = Dividend X
+                     754    ; R3, R2 = Divisor Y
+2-129_^1        TEST DEMO                                                                                     PAGE 14
+
+                     755    ; Output:
+                     756    ; R1, R0 = quotient Q of division Q = X/Y
+                     757    ; R3, R2 = remainder
+                     758    ; alters: acc, B, dpl, dph, r4, r5, r6, r7
+0392                 759    UDIV16:
+0392 C0E0            760            PUSH ACC
+0394 EC              761            MOV A, R4
+0395 C0E0            762            PUSH ACC
+0397 ED              763            MOV A, R5
+0398 C0E0            764            PUSH ACC
+039A EE              765            MOV A, R6
+039B C0E0            766            PUSH ACC
+039D EF              767            MOV A, R7
+039E C0E0            768            PUSH ACC
+                     769    
+03A0 7F00            770            MOV R7, #0H     ; clear partial remainder
+03A2 7E00            771            MOV R6, #0H
+03A4 75F010          772            MOV B, #016     ; set loop count
+                     773    
+03A7                 774    DIV_LOOP:
+03A7 C3              775            CLR C           ; clear carry flag
+03A8 E8              776            MOV A, R0       ; shift the highest bit of
+03A9 33              777            RLC A           ; the dividend into...
+03AA F8              778            MOV R0, A
+03AB E9              779            MOV A, R1
+03AC 33              780            RLC A
+03AD F9              781            MOV R1, A
+03AE EE              782            MOV A, R6       ; the lowest bit of the
+03AF 33              783            RLC A           ; partial remainder
+03B0 FE              784            MOV R6, A
+03B1 EF              785            MOV A, R7
+03B2 33              786            RLC A
+03B3 FF              787            MOV R7, A
+03B4 EE              788            MOV A, R6       ; trial subtract divisor
+03B5 C3              789            CLR C           ; from partial remainder
+03B6 9A              790            SUBB A, R2
+03B7 F582            791            MOV DPL, A
+03B9 EF              792            MOV A, R7
+03BA 9B              793            SUBB A, R3
+03BB F583            794            MOV DPH, A
+03BD B3              795            CPL C           ; complement external borrow
+03BE 5004            796            JNC DIV_1       ; update partial remainder if borrow
+03C0 AF83            797            MOV R7, DPH     ; update partial remainder
+03C2 AE82            798            MOV R6, DPL
+03C4                 799    DIV_1:  
+03C4 EC              800            MOV A, R4       ; shift result bit into partial
+03C5 33              801            RLC A           ; quotient
+03C6 FC              802            MOV R4, A
+03C7 ED              803            MOV A, R5
+03C8 33              804            RLC A
+03C9 FD              805            MOV R5, A
+03CA D5F0DA          806            DJNZ B, DIV_LOOP
+03CD ED              807            MOV A, R5       ; put quotient in R0 and R1
+03CE F9              808            MOV R1, A
+03CF EC              809            MOV A, R4
+03D0 F8              810            MOV R0, A
+03D1 EF              811            MOV A, R7       ; get remainder, saved before the
+03D2 FB              812            MOV R3, A       ; last subtraction
+2-129_^1        TEST DEMO                                                                                     PAGE 15
+
+03D3 EE              813            MOV A, R6
+03D4 FA              814            MOV R2, A
+                     815    
+03D5 D0E0            816            POP ACC
+03D7 FF              817            MOV R7, A
+03D8 D0E0            818            POP ACC
+03DA FE              819            MOV R6, A
+03DB D0E0            820            POP ACC
+03DD FD              821            MOV R5, A
+03DE D0E0            822            POP ACC
+03E0 FC              823            MOV R4, A
+03E1 D0E0            824            POP ACC
+03E3 22              825            RET
+                     826    
+                     827    ; Conversion from base 10 to hexadecimal number
+                     828    ; Input:
+                     829    ; R5 - low byte of decimal value, R6 - high byte of decimal value
+                     830    ; Output:
+                     831    ; R5 - low byte of hex value, R6 - high byte of hex value
+03E4                 832    DECtoHEX:
+03E4 C0E0            833            PUSH ACC
+03E6 E8              834            MOV A, R0
+03E7 C0E0            835            PUSH ACC
+03E9 E9              836            MOV A, R1
+03EA C0E0            837            PUSH ACC
+03EC EA              838            MOV A, R2
+03ED C0E0            839            PUSH ACC
+                     840    
+03EF EB              841            MOV A, R3
+03F0 C0E0            842            PUSH ACC
+03F2 EC              843            MOV A, R4
+03F3 C0E0            844            PUSH ACC
+                     845    
+03F5 ED              846            MOV A, R5
+03F6 540F            847            ANL A, #0FH
+03F8 FB              848            MOV R3, A
+03F9 ED              849            MOV A, R5
+03FA C4              850            SWAP A
+03FB 540F            851            ANL A, #0FH
+03FD 75F00A          852            MOV B, #0AH
+0400 A4              853            MUL AB
+0401 2B              854            ADD A, R3
+0402 FB              855            MOV R3, A
+0403 E5F0            856            MOV A, B
+0405 7C00            857            MOV R4, #0H
+0407 3C              858            ADDC A, R4
+0408 FC              859            MOV R4, A
+                     860    
+0409 EE              861            MOV A, R6
+040A 540F            862            ANL A, #0FH
+040C 75F064          863            MOV B, #064H
+040F A4              864            MUL AB
+0410 F8              865            MOV R0, A
+0411 A9F0            866            MOV R1, B
+0413 EB              867            MOV A, R3
+0414 FA              868            MOV R2, A
+                     869    
+0415 EC              870            MOV A, R4
+2-129_^1        TEST DEMO                                                                                     PAGE 16
+
+0416 FB              871            MOV R3, A
+                     872    
+0417 7132            873            CALL ADD16      
+0419 E8              874            MOV A, R0
+041A FB              875            MOV R3, A
+041B E9              876            MOV A, R1
+041C FC              877            MOV R4, A
+                     878    
+041D EE              879            MOV A, R6
+041E C4              880            SWAP A
+041F 540F            881            ANL A, #0FH
+0421 F8              882            MOV R0, A
+0422 7900            883            MOV R1, #00H
+0424 7AE8            884            MOV R2, #0E8H
+0426 EB              885            MOV A, R3       ; save R3 value
+0427 C0E0            886            PUSH ACC
+0429 7B03            887            MOV R3, #03H
+042B 714D            888            CALL UMUL16     ; result should never be greater than 270FH     
+                     889    
+042D D0E0            890            POP ACC         ; retrieve original value of R3
+042F FA              891            MOV R2, A
+0430 EC              892            MOV A, R4
+0431 FB              893            MOV R3, A
+0432 7132            894            CALL ADD16
+0434 E8              895            MOV A, R0
+0435 FD              896            MOV R5, A
+0436 E9              897            MOV A, R1
+0437 FE              898            MOV R6, A
+                     899    
+0438 D0E0            900            POP ACC
+043A FC              901            MOV R4, A
+043B D0E0            902            POP ACC
+043D FB              903            MOV R3, A 
+043E D0E0            904            POP ACC
+0440 FA              905            MOV R2, A
+0441 D0E0            906            POP ACC
+0443 F9              907            MOV R1, A
+0444 D0E0            908            POP ACC
+0446 F8              909            MOV R0, A
+0447 D0E0            910            POP ACC
+0449 22              911            RET
+                     912    
+                     913    ; Conversion from hexadecimal to base 10 value
+                     914    ; Input:
+                     915    ; R5 - low byte of hex value, R6 - high byte of hex value
+                     916    ; Output:
+                     917    ; R5 - low byte of decimal value, R6 - high byte of decimal value
+044A                 918    HEXtoDEC:
+044A C0E0            919            PUSH ACC
+044C E8              920            MOV A, R0
+044D C0E0            921            PUSH ACC
+044F E9              922            MOV A, R1
+0450 C0E0            923            PUSH ACC
+0452 EA              924            MOV A, R2
+0453 C0E0            925            PUSH ACC
+                     926            
+0455 EB              927            MOV A, R3
+0456 C0E0            928            PUSH ACC
+2-129_^1        TEST DEMO                                                                                     PAGE 17
+
+0458 EC              929            MOV A, R4
+0459 C0E0            930            PUSH ACC
+                     931    
+045B ED              932            MOV A, R5       ; set up dividend
+045C F8              933            MOV R0, A
+045D EE              934            MOV A, R6
+045E F9              935            MOV R1, A
+045F 7B00            936            MOV R3, #0H     ; set up divisor
+0461 7A0A            937            MOV R2, #0AH
+0463 7192            938            CALL UDIV16
+0465 EA              939            MOV A, R2
+0466 FD              940            MOV R5, A
+0467 7E00            941            MOV R6, #0H
+0469 7A0A            942            MOV R2, #0AH    
+046B 7B00            943            MOV R3, #0H
+046D 7192            944            CALL UDIV16
+046F ED              945            MOV A, R5
+0470 C4              946            SWAP A
+0471 2A              947            ADD A, R2
+0472 C4              948            SWAP A
+0473 FD              949            MOV R5, A
+0474 7A0A            950            MOV R2, #0AH
+0476 7B00            951            MOV R3, #0H
+0478 7192            952            CALL UDIV16
+047A EA              953            MOV A, R2
+047B C4              954            SWAP A
+047C 28              955            ADD A, R0
+047D C4              956            SWAP A
+047E FE              957            MOV R6, A
+                     958    
+047F D0E0            959            POP ACC
+0481 FC              960            MOV R4, A
+0482 D0E0            961            POP ACC
+0484 FB              962            MOV R3, A
+                     963            
+0485 D0E0            964            POP ACC
+0487 FA              965            MOV R2, A
+0488 D0E0            966            POP ACC
+048A F9              967            MOV R1, A
+048B D0E0            968            POP ACC
+048D F8              969            MOV R0, A
+048E D0E0            970            POP ACC
+0490 22              971            RET     
+                     972    
+                     973    END
+
+VERSION 1.2k ASSEMBLY COMPLETE, 0 ERRORS FOUND
+2-129_^1        TEST DEMO                                                                                     PAGE 18
+
+ACC. . . . . . . . . . . . . . .  D ADDR  00E0H  PREDEFINED  
+ADD16. . . . . . . . . . . . . .  C ADDR  0332H  
+ANYKEYLOOP . . . . . . . . . . .  C ADDR  01ADH  
+B. . . . . . . . . . . . . . . .  D ADDR  00F0H  PREDEFINED  
+CALCADD. . . . . . . . . . . . .  C ADDR  00FAH  NOT USED  
+CALCADDEND . . . . . . . . . . .  C ADDR  010EH  
+CALCDISPLAY. . . . . . . . . . .  C ADDR  0175H  
+CALCDIV. . . . . . . . . . . . .  C ADDR  0154H  
+CALCDIVBYZERO. . . . . . . . . .  C ADDR  0165H  
+CALCDODIV. . . . . . . . . . . .  C ADDR  015FH  
+CALCEND. . . . . . . . . . . . .  C ADDR  0185H  
+CALCERROR. . . . . . . . . . . .  C ADDR  0165H  
+CALCGETNUM2. . . . . . . . . . .  C ADDR  00C8H  
+CALCGETNUM2END . . . . . . . . .  C ADDR  00D5H  
+CALCGETOP. . . . . . . . . . . .  C ADDR  00B3H  
+CALCGETOPEND . . . . . . . . . .  C ADDR  00C0H  
+CALCMUL. . . . . . . . . . . . .  C ADDR  0137H  
+CALCMULEND . . . . . . . . . . .  C ADDR  0151H  
+CALCOVERFLOW . . . . . . . . . .  C ADDR  0165H  
+CALCSUB. . . . . . . . . . . . .  C ADDR  0111H  
+CALCSUBEND . . . . . . . . . . .  C ADDR  0134H  
+CALCSUBNEG . . . . . . . . . . .  C ADDR  0128H  NOT USED  
+CALCULATE. . . . . . . . . . . .  C ADDR  00E4H  
+CHECKCLEAR . . . . . . . . . . .  C ADDR  027CH  
+CHECKDIVIDE. . . . . . . . . . .  C ADDR  0294H  
+CHECKEQUALOP . . . . . . . . . .  C ADDR  029AH  
+CHECKHIGHNUMLOOP . . . . . . . .  C ADDR  02CFH  
+CHECKMINUS . . . . . . . . . . .  C ADDR  0288H  
+CHECKMULTIPLY. . . . . . . . . .  C ADDR  028EH  
+CHECKNUM10 . . . . . . . . . . .  C ADDR  0254H  
+CHECKNUM11 . . . . . . . . . . .  C ADDR  025CH  
+CHECKNUM13 . . . . . . . . . . .  C ADDR  0264H  
+CHECKNUM14 . . . . . . . . . . .  C ADDR  026CH  
+CHECKNUM15 . . . . . . . . . . .  C ADDR  0274H  
+CHECKNUM2. . . . . . . . . . . .  C ADDR  022CH  NOT USED  
+CHECKNUM5. . . . . . . . . . . .  C ADDR  0234H  
+CHECKNUM6. . . . . . . . . . . .  C ADDR  023CH  
+CHECKNUM7. . . . . . . . . . . .  C ADDR  0244H  
+CHECKNUM9. . . . . . . . . . . .  C ADDR  024CH  
+CHECKPLUS. . . . . . . . . . . .  C ADDR  0282H  
+CLEARDISPLAY . . . . . . . . . .  C ADDR  02F2H  
+DECTOHEX . . . . . . . . . . . .  C ADDR  03E4H  
+DELAY. . . . . . . . . . . . . .  C ADDR  030DH  
+DELAYEND . . . . . . . . . . . .  C ADDR  0329H  
+DISPLAYNUM . . . . . . . . . . .  C ADDR  0215H  
+DISPLAYNUMEND. . . . . . . . . .  C ADDR  02C6H  
+DIV_1. . . . . . . . . . . . . .  C ADDR  03C4H  
+DIV_LOOP . . . . . . . . . . . .  C ADDR  03A7H  
+DOSHIFT. . . . . . . . . . . . .  C ADDR  02DDH  
+DPH. . . . . . . . . . . . . . .  D ADDR  0083H  PREDEFINED  
+DPL. . . . . . . . . . . . . . .  D ADDR  0082H  PREDEFINED  
+EQUALFOUND . . . . . . . . . . .  C ADDR  02A0H  
+EWB. . . . . . . . . . . . . . .  D ADDR  00F8H  
+GETNUM1. . . . . . . . . . . . .  C ADDR  0020H  
+GETNUM1OP. . . . . . . . . . . .  C ADDR  003CH  
+GETNUM2. . . . . . . . . . . . .  C ADDR  007CH  
+GETNUMLOOP . . . . . . . . . . .  C ADDR  0222H  
+GETOPERATOR. . . . . . . . . . .  C ADDR  0046H  
+2-129_^1        TEST DEMO                                                                                     PAGE 19
+
+GETTINGNUM2. . . . . . . . . . .  C ADDR  0098H  
+GOTOP. . . . . . . . . . . . . .  C ADDR  005FH  
+HEXTODEC . . . . . . . . . . . .  C ADDR  044AH  
+INITVAR. . . . . . . . . . . . .  C ADDR  000CH  
+INNERDELAY . . . . . . . . . . .  C ADDR  032AH  
+KEYSCAN. . . . . . . . . . . . .  C ADDR  0194H  
+KEYSCANEND . . . . . . . . . . .  C ADDR  0209H  NOT USED  
+LINECLEAR. . . . . . . . . . . .  C ADDR  0303H  
+LINECLEARLOOP. . . . . . . . . .  C ADDR  0306H  
+NOSHIFT. . . . . . . . . . . . .  C ADDR  02D7H  
+NUM1H. . . . . . . . . . . . . .  D ADDR  0021H  
+NUM1L. . . . . . . . . . . . . .  D ADDR  0020H  
+NUM2H. . . . . . . . . . . . . .  D ADDR  0024H  
+NUM2L. . . . . . . . . . . . . .  D ADDR  0023H  
+NUMFOUND . . . . . . . . . . . .  C ADDR  02B1H  
+NUMNOTFOUND. . . . . . . . . . .  C ADDR  02ACH  
+OPERATOR . . . . . . . . . . . .  D ADDR  0022H  
+OPERATORFOUND. . . . . . . . . .  C ADDR  02A6H  
+OUTERDELAY . . . . . . . . . . .  C ADDR  031BH  
+OV . . . . . . . . . . . . . . .  B ADDR  00D2H  PREDEFINED  
+P0 . . . . . . . . . . . . . . .  D ADDR  0080H  PREDEFINED  
+P1 . . . . . . . . . . . . . . .  D ADDR  0090H  PREDEFINED  
+P2 . . . . . . . . . . . . . . .  D ADDR  00A0H  PREDEFINED  
+READYSTATE . . . . . . . . . . .  C ADDR  0065H  
+RESET. . . . . . . . . . . . . .  C ADDR  0000H  NOT USED  
+SCANMATCH. . . . . . . . . . . .  C ADDR  0206H  
+SHIFTBITLEFT . . . . . . . . . .  C ADDR  02E2H  
+SHIFTNUMLEFT . . . . . . . . . .  C ADDR  02C7H  
+SHIFTNUMLEFTEND. . . . . . . . .  C ADDR  02EFH  
+SHIFTNUMLEFTSTART. . . . . . . .  C ADDR  02C9H  NOT USED  
+SP . . . . . . . . . . . . . . .  D ADDR  0081H  PREDEFINED  
+SUB16. . . . . . . . . . . . . .  C ADDR  033FH  
+UDIV16 . . . . . . . . . . . . .  C ADDR  0392H  
+UMUL16 . . . . . . . . . . . . .  C ADDR  034DH  
+WAITKEYUPLOOP. . . . . . . . . .  C ADDR  01A2H  

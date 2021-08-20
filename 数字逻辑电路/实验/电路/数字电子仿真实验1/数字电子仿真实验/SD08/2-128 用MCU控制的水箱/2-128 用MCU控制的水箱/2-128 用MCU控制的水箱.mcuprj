@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MCUProject Schema="62" Class="CMCUProject" Path="" PathAbs="" ProjectType="0">
+<ProjectFolders/>
+<ProjectFiles>
+<FileItem>
+<MCUFile Class="CMCUFile" Path="&amp;UNI2-128 _uc17528MCU_uc563a7523676846c347bb1.asm" PathAbs="&amp;UNIE:\_uc3679771d56728\_uc275358def\_uc865705b5775355b504eff771f5b9e9a8c1\_uc865705b5775355b504eff771f5b9e9a8c\SD08\2-128 _uc17528MCU_uc563a7523676846c347bb1\2-128 _uc17528MCU_uc563a7523676846c347bb1\2-128 _uc17528MCU_uc563a7523676846c347bb1.asm" UseFileOptions="0" FileOptions=""/>
+</FileItem>
+</ProjectFiles>
+<BuildSettings>
+<MCUProjectBuildSettings Class="CMCUProjectBuildSettings" ToolGroupType="0" IntermediatePath="&amp;ASC.\" IntermediatePathAbs="&amp;UNIE:\_uc3679771d56728\_uc275358def\_uc865705b5775355b504eff771f5b9e9a8c1\_uc865705b5775355b504eff771f5b9e9a8c\SD08\2-128 _uc17528MCU_uc563a7523676846c347bb1\2-128 _uc17528MCU_uc563a7523676846c347bb1\" OutputPath="&amp;ASC.\" OutputPathAbs="&amp;UNIE:\_uc3679771d56728\_uc275358def\_uc865705b5775355b504eff771f5b9e9a8c1\_uc865705b5775355b504eff771f5b9e9a8c\SD08\2-128 _uc17528MCU_uc563a7523676846c347bb1\2-128 _uc17528MCU_uc563a7523676846c347bb1\" TargetFileType="6" SimPath="&amp;ASC.\" SimPathAbs="&amp;UNIE:\_uc3679771d56728\_uc275358def\_uc865705b5775355b504eff771f5b9e9a8c1\_uc865705b5775355b504eff771f5b9e9a8c\SD08\2-128 _uc17528MCU_uc563a7523676846c347bb1\2-128 _uc17528MCU_uc563a7523676846c347bb1\" SimFile="&amp;UNI2-128 _uc17528MCU_uc563a7523676846c347bb1.hex" CodeLoadType="0">
+<Assembler>
+<MCUToolSettings Class="CMCUToolSettings" ToolType="0" IntermediatePath="&amp;ASC.\" IntermediatePathAbs="" OutputPath="&amp;ASC.\" OutputPathAbs="" TargetType="6" IncludeOptions="&amp;ASC$MOD51" PreFilenameOptions="" PostFilenameOptions="">
+<MCULibraries/>
+</MCUToolSettings>
+</Assembler>
+</MCUProjectBuildSettings>
+</BuildSettings>
+</MCUProject>
