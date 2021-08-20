@@ -1,0 +1,111 @@
+A51 MACRO ASSEMBLER  TASK1                                                                06/12/2021 19:53:19 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\task1.obj
+ASSEMBLER INVOKED BY: C:\Program Files (x86)\KEIL\C51\BIN\A51.EXE task1.a51 SET(SMALL) DEBUG PRINT(.\Listings\task1.lst)
+                       OBJECT(.\Objects\task1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+  0030                 1     TCOUNT1S EQU 30H
+  0032                 2     ID EQU 32H
+                       3             
+0000                   4     org 0000H
+0000 02000E            5     LJMP START
+                       6     
+000B                   7     org 000BH
+000B 020025            8     LJMP INT_T0
+                       9     
+000E                  10     START:
+000E 753000           11      MOV TCOUNT1S, #00H
+0011 753200           12      MOV ID, #00H
+0014 758901           13      MOV TMOD, #01H
+0017 758C3C           14      MOV TH0, #(65536-50000)/256
+001A 758AB0           15      MOV TL0, #(65536-50000)MOD 256
+001D D28C             16      SETB TR0
+001F D2A9             17      SETB ET0
+0021 D2AF             18      SETB EA
+0023 80FE             19      SJMP $
+                      20              
+0025                  21     INT_T0:
+0025 758C3C           22      MOV TH0, #(65536-50000)/256
+0028 758AB0           23      MOV TL0, #(65536-50000)MOD 256
+002B 0530             24      INC TCOUNT1S
+002D E530             25      MOV A, TCOUNT1S
+002F B4140D           26      CJNE A, #20, NEXT
+0032 753000           27      MOV TCOUNT1S, #00H
+0035 0532             28      INC ID
+0037 E532             29      MOV A,ID
+0039 B40403           30      CJNE A,#04H,NEXT
+003C 753200           31      MOV ID, #00H
+                      32      
+003F                  33     NEXT:
+003F E532             34      MOV A, ID
+0041 900200           35      MOV DPTR,#LED_TABLE
+0044 B40005           36      CJNE A, #00H,SID1
+0047 93               37      MOVC A,@ A+DPTR
+0048 F590             38      MOV P1,A
+004A 801F             39      SJMP DONE
+                      40      
+004C                  41     SID1:
+004C 900200           42      MOV DPTR,#LED_TABLE
+004F B40110           43      CJNE A,#01H,SID3
+0052 93               44      MOVC A,@ A+DPTR
+0053 F590             45      MOV P1,A
+0055 8014             46      SJMP DONE
+                      47      
+0057                  48     SID2:
+0057 900200           49      MOV DPTR,#LED_TABLE
+005A B40205           50      CJNE A,#02H,SID3
+005D 93               51      MOVC A,@ A+DPTR
+005E F590             52      MOV P1,A
+0060 8009             53      SJMP DONE
+                      54      
+0062                  55     SID3:
+0062 900200           56      MOV DPTR,#LED_TABLE
+0065 B40303           57      CJNE A,#03H,DONE
+A51 MACRO ASSEMBLER  TASK1                                                                06/12/2021 19:53:19 PAGE     2
+
+0068 93               58      MOVC A,@ A+DPTR
+0069 F590             59      MOV P1,A
+006B                  60     DONE:
+006B 32               61      RETI
+                      62     
+0200                  63     org 0200H
+0200                  64     LED_TABLE:
+0200 0A0C1121         65      DB 00001010B, 00001100B, 00010001B, 00100001B
+                      66              
+                      67     
+                      68     END
+A51 MACRO ASSEMBLER  TASK1                                                                06/12/2021 19:53:19 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DONE . . . . . . .  C ADDR   006BH   A   
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+ET0. . . . . . . .  B ADDR   00A8H.1 A   
+ID . . . . . . . .  N NUMB   0032H   A   
+INT_T0 . . . . . .  C ADDR   0025H   A   
+LED_TABLE. . . . .  C ADDR   0200H   A   
+NEXT . . . . . . .  C ADDR   003FH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+SID1 . . . . . . .  C ADDR   004CH   A   
+SID2 . . . . . . .  C ADDR   0057H   A   
+SID3 . . . . . . .  C ADDR   0062H   A   
+START. . . . . . .  C ADDR   000EH   A   
+TCOUNT1S . . . . .  N NUMB   0030H   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
