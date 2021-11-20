@@ -1,10 +1,11 @@
 <p align="center">
-  <img src="https://qunfx.cn/BUCTBASE.svg" alt="Directory Lister" width="66%">
+  <img src="logo.png"
 </p>
 
 # BUCTBASE - 北京化工大学课程资料整理开源项目
 
 #### GitHub主要是用来做永久备份，喜欢的同学们可以fork一份
+
 #### 访问慢，下载不了就是github网络问题，需要VPN
 
 有问题可以通过以下方式取得联系
@@ -28,7 +29,7 @@ QQ：3217776870 AND 微信：towardsdawn
 
 ## Usage
 
-使用方法：访问 https://github.com/BUCTBASE/BUCTBASE ，点击资料链接即可下载。
+使用方法：访问 <https://github.com/BUCTBASE/BUCTBASE> ，点击资料链接即可下载。
 
 手机用户点击View code进入目录
 
