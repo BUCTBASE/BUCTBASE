@@ -1,0 +1,113 @@
+; FTDIBUS.INF
+; Copyright (c) 2000-2007 FTDI Ltd.
+;
+; USB serial converter driver installation for Windows 2000, XP, Server 2003, Vista (x86 and x64).
+;
+
+[Version]
+Signature="$Windows NT$"
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%DESC%
+Class=USB
+ClassGUID={36fc9e60-c465-11cf-8056-444553540000}
+Provider=%FTDI%
+CatalogFile=ftdibus.cat
+DriverVer=06/27/2007,2.02.04
+
+[SourceDisksNames]
+1=%DriversDisk%,,,
+
+[SourceDisksFiles]
+ftdibus.sys = 1,i386
+ftbusui.dll = 1,i386
+ftd2xx.dll = 1,i386
+
+[SourceDisksFiles.amd64]
+ftdibus.sys = 1,amd64
+ftbusui.dll = 1,amd64
+ftd2xx64.dll = 1,amd64
+ftd2xx.dll = 1,i386
+
+[DestinationDirs]
+FtdiBus.NT.Copy = 10,system32\drivers
+FtdiBus.NT.Copy2 = 10,system32
+FtdiBus.NTamd64.Copy = 10,system32\drivers
+FtdiBus.NTamd64.Copy2 = 10,system32
+FtdiBus.NTamd64.Copy3 = 10,syswow64
+
+
+[Manufacturer]
+%Ftdi%=FtdiHw,NTamd64
+
+[FtdiHw]
+%USB\VID_0403&PID_6001.DeviceDesc%=FtdiBus.NT,USB\VID_0403&PID_6001
+%USB\VID_0403&PID_6010&MI_00.DeviceDesc%=FtdiBus.NT,USB\VID_0403&PID_6010&MI_00
+%USB\VID_0403&PID_6010&MI_01.DeviceDesc%=FtdiBus.NT,USB\VID_0403&PID_6010&MI_01
+
+[FtdiHw.NTamd64]
+%USB\VID_0403&PID_6001.DeviceDesc%=FtdiBus.NTamd64,USB\VID_0403&PID_6001
+%USB\VID_0403&PID_6010&MI_00.DeviceDesc%=FtdiBus.NTamd64,USB\VID_0403&PID_6010&MI_00
+%USB\VID_0403&PID_6010&MI_01.DeviceDesc%=FtdiBus.NTamd64,USB\VID_0403&PID_6010&MI_01
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[FtdiBus.NT]
+CopyFiles=FtdiBus.NT.Copy,FtdiBus.NT.Copy2
+AddReg=FtdiBus.NT.AddReg
+
+[FtdiBus.NTamd64]
+CopyFiles=FtdiBus.NTamd64.Copy,FtdiBus.NTamd64.Copy2,FtdiBus.NTamd64.Copy3
+AddReg=FtdiBus.NT.AddReg
+
+[FtdiBus.NT.Services]
+AddService = FTDIBUS, 0x00000002, FtdiBus.NT.AddService
+
+[FtdiBus.NTamd64.Services]
+AddService = FTDIBUS, 0x00000002, FtdiBus.NT.AddService
+
+[FtdiBus.NT.AddService]
+DisplayName = %SvcDesc%
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER
+StartType = 3 ; SERVICE_DEMAND_START
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary = %10%\system32\drivers\ftdibus.sys
+LoadOrderGroup = Base
+AddReg = FtdiBus.NT.AddService.AddReg
+
+[FtdiBus.NT.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,ftdibus.sys
+HKR,,EnumPropPages32,,"ftbusui.dll,FTBUSUIPropPageProvider"
+
+[FtdiBus.NT.AddService.AddReg]
+;HKR,Parameters,"LocIds",1,31,00,00,00,32,00,00,00,00
+;HKR,Parameters,"RetryResetCount",0x10001,50
+
+
+[FtdiBus.NT.Copy]
+ftdibus.sys
+
+[FtdiBus.NT.Copy2]
+ftbusui.dll
+ftd2xx.dll
+
+[FtdiBus.NTamd64.Copy]
+ftdibus.sys
+
+[FtdiBus.NTamd64.Copy2]
+ftbusui.dll
+ftd2xx.dll,ftd2xx64.dll
+
+[FtdiBus.NTamd64.Copy3]
+ftd2xx.dll
+
+[Strings]
+Ftdi="FTDI"
+DESC="CDM Driver Package"
+DriversDisk="FTDI USB Drivers Disk"
+USB\VID_0403&PID_6001.DeviceDesc="USB Serial Converter"
+USB\VID_0403&PID_6010&MI_00.DeviceDesc="USB Serial Converter A"
+USB\VID_0403&PID_6010&MI_01.DeviceDesc="USB Serial Converter B"
+SvcDesc="USB Serial Converter Driver"
+ClassName="USB"
